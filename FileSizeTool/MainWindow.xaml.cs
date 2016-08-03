@@ -1,18 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
-namespace FileSizeTool
+namespace MichaelBrandonMorris.FileSizeTool
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -22,6 +12,26 @@ namespace FileSizeTool
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void UIElement_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ClickCount < 2)
+            {
+                return;
+            }
+
+            var messageBox = sender as Border;
+            var message = messageBox?.Child as TextBlock;
+
+            if (message == null)
+            {
+                return;
+            }
+
+            messageBox.Visibility = Visibility.Hidden;
+            message.Text = string.Empty;
+            Panel.SetZIndex(messageBox, -1);
         }
     }
 }
