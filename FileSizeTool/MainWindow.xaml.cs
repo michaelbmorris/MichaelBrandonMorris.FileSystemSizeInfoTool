@@ -2,7 +2,7 @@
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace MichaelBrandonMorris.FileSizeTool
+namespace MichaelBrandonMorris.FileSystemSizeInfoTool
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

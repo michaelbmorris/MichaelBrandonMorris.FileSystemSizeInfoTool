@@ -7,7 +7,7 @@ using System.Windows.Input;
 using GalaSoft.MvvmLight.CommandWpf;
 using MichaelBrandonMorris.DynamicText;
 
-namespace MichaelBrandonMorris.FileSizeTool
+namespace MichaelBrandonMorris.FileSystemSizeInfoTool
 {
     internal class ViewModel : INotifyPropertyChanged
     {

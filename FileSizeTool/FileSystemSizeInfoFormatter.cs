@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Text;
+using Extensions.PrimitiveExtensions;
 
-namespace MichaelBrandonMorris.FileSizeTool
+namespace MichaelBrandonMorris.FileSystemSizeInfoTool
 {
     internal class FileSystemSizeInfoFormatter
     {
@@ -10,7 +11,11 @@ namespace MichaelBrandonMorris.FileSizeTool
         private const string FileExtensionHeader = "File Extension";
         private const string FolderContentsHeader = "# Folders";
         private const string FileContentsHeader = "# Files";
-        private const string FolderSizeHeader = "Size";
+        private const string SizeHeader = "Size";
+        private const string OwnerHeader = "Owner";
+
+        private const char Quote = '"';
+        private const char Comma = ',';
 
         private IEnumerable<FileSystemSizeInfo> FileSystemSizeInfos
         {
@@ -47,11 +52,17 @@ namespace MichaelBrandonMorris.FileSizeTool
             {
                 for (var i = 0; i < MaxPathLevels; i++)
                 {
-                    header.Append($"{LevelHeader} {i}");
+                    header.Append($"{LevelHeader} {i}".Wrap(Quote) + Comma);
                 }
             }
 
-            header.Append(FileExtensionHeader);
+            header.Append(FileExtensionHeader.Wrap(Quote) + Comma);
+            header.Append(FolderContentsHeader.Wrap(Quote) + Comma);
+            header.Append(FileContentsHeader.Wrap(Quote) + Comma);
+            header.Append(SizeHeader.Wrap(Quote) + Comma);
+            header.Append(OwnerHeader.Wrap(Quote) + Comma);
+
+            formattedFileSystemSizeInfos.AppendLine(header.ToString());
 
             foreach (var fileSystemSizeInfo in FileSystemSizeInfos)
             {

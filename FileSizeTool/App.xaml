@@ -1,11 +1,11 @@
-﻿<Application x:Class="MichaelBrandonMorris.FileSizeTool.App"
+﻿<Application x:Class="MichaelBrandonMorris.FileSystemSizeInfoTool.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:fileSizeTool="clr-namespace:MichaelBrandonMorris.FileSizeTool"
              xmlns:valueConverters="clr-namespace:MichaelBrandonMorris.ValueConverters;assembly=MichaelBrandonMorris.ValueConverters"
+             xmlns:fileSystemSizeInfoTool="clr-namespace:MichaelBrandonMorris.FileSystemSizeInfoTool"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <fileSizeTool:ViewModel x:Key="ViewModel"/>
+        <fileSystemSizeInfoTool:ViewModel x:Key="ViewModel"/>
         <valueConverters:BooleanToVisibilityHiddenConverter x:Key="BooleanToVisibilityHiddenConverter"/>
         <valueConverters:InverseBooleanConverter x:Key="InverseBooleanConverter"/>
     </Application.Resources>

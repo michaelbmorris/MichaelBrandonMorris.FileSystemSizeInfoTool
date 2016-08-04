@@ -1,4 +1,4 @@
-﻿<Window x:Class="MichaelBrandonMorris.FileSizeTool.MainWindow"
+﻿<Window x:Class="MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,7 +6,7 @@
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
         DataContext="{StaticResource ViewModel}"
-        Title="File Size Tool"
+        Title="File System Size Info Tool"
         SizeToContent="WidthAndHeight"
         ResizeMode="NoResize">
     <DockPanel>

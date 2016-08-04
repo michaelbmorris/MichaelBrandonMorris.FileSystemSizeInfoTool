@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MichaelBrandonMorris.FileSizeTool.Properties {
+namespace MichaelBrandonMorris.FileSystemSizeInfoTool.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

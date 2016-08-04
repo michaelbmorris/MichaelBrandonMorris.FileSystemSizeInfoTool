@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using Extensions.CollectionExtensions;
 
-namespace MichaelBrandonMorris.FileSizeTool
+namespace MichaelBrandonMorris.FileSystemSizeInfoTool
 {
     internal class FileSystemSizeInfoGetter
     {
@@ -131,11 +131,16 @@ namespace MichaelBrandonMorris.FileSizeTool
                     (MaxFolderSize != null &&
                     directorySizeInfo.Size > MaxFolderSize.Value) || 
                     (MinFolderContents != null &&
-                    directorySizeInfo.Contents < MinFolderContents.Value) ||
+                    directorySizeInfo.ContentsCount < MinFolderContents.Value) ||
                     (MaxFolderContents != null &&
-                    directorySizeInfo.Contents > MaxFolderContents.Value))
+                    directorySizeInfo.ContentsCount > MaxFolderContents.Value))
                 {
                     return;
+                }
+
+                if (directorySizeInfo.PathLevels > MaxPathLevels)
+                {
+                    MaxPathLevels = directorySizeInfo.PathLevels;
                 }
 
                 FileSystemSizeInfos.Add(directorySizeInfo);
@@ -154,13 +159,23 @@ namespace MichaelBrandonMorris.FileSizeTool
                             continue;
                         }
 
+                        var fileSizeInfo = new FileSystemSizeInfo(fileInfo);
+
+                        if (fileSizeInfo.PathLevels > MaxPathLevels)
+                        {
+                            MaxPathLevels = fileSizeInfo.PathLevels;
+                        }
+
                         FileSystemSizeInfos.Add(
-                            new FileSystemSizeInfo(fileInfo));
+                            fileSizeInfo);
                     }
 
                     var directoryInfo = fileSystemInfo as DirectoryInfo;
 
-                    if (directoryInfo == null)
+                    if (directoryInfo == null || 
+                        Scope == Scope.NoChildren || 
+                        (Scope == Scope.ImmediateChildren && 
+                        currentLevel > 0))
                     {
                         continue;
                     }
@@ -173,82 +188,6 @@ namespace MichaelBrandonMorris.FileSizeTool
                 
                 throw;
             }
-        }
-    }
-
-    internal class FileSystemSizeInfo
-    {
-        internal long Size
-        {
-            get;
-        }
-
-        internal int Contents
-        {
-            get;
-        }
-
-        internal FileSystemInfo FileSystemInfo
-        {
-            get;
-        }
-
-        internal FileSystemSizeInfo(FileInfo file)
-        {
-            Size = file.Length;
-            Contents = 0;
-            FileSystemInfo = file;
-        }
-
-        internal FileSystemSizeInfo(DirectoryInfo directory)
-        {
-            Size = GetDirectorySize(directory);
-            Contents = GetContents(directory);
-            FileSystemInfo = directory;
-        }
-
-        private static long GetDirectorySize(DirectoryInfo directory)
-        {
-            long size = 0;
-
-            foreach (var fileSystemInfo in directory.GetFileSystemInfos())
-            {
-                var fileInfo = fileSystemInfo as FileInfo;
-
-                if (fileInfo != null)
-                {
-                    size += fileInfo.Length;
-                }
-                else
-                {
-                    var directoryInfo = fileSystemInfo as DirectoryInfo;
-
-                    if (directoryInfo != null)
-                    {
-                        size += GetDirectorySize(directoryInfo);
-                    }
-                }
-            }
-
-            return size;
-        }
-
-        private static int GetContents(DirectoryInfo directory)
-        {
-            var contents = 0;
-
-            foreach (var fileSystemInfo in directory.GetFileSystemInfos())
-            {
-                contents++;
-                var directoryInfo = fileSystemInfo as DirectoryInfo;
-
-                if (directoryInfo != null)
-                {
-                    contents += GetContents(directoryInfo);
-                }
-            }
-
-            return contents;
         }
     }
 }

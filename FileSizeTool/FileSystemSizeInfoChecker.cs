@@ -4,10 +4,8 @@ using System.Diagnostics;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using static System.Environment;
-using static System.Environment.SpecialFolder;
 
-namespace MichaelBrandonMorris.FileSizeTool
+namespace MichaelBrandonMorris.FileSystemSizeInfoTool
 {
     internal enum Scope
     {
@@ -24,7 +22,7 @@ namespace MichaelBrandonMorris.FileSizeTool
         private const string ResultsFileName = "FileSizeInfo";
 
         private static readonly string OutputPath = Path.Combine(
-            GetFolderPath(MyDocuments), "FileSizeTool");
+            Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "FileSizeTool");
 
         internal FileSizeChecker(
             IEnumerable<string> searchPaths,
@@ -112,4 +110,4 @@ namespace MichaelBrandonMorris.FileSizeTool
             Process.Start(resultsFullName);
         }
     }
-}
+}com
