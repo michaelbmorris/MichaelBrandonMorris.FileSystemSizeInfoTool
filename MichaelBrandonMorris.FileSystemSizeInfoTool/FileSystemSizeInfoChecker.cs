@@ -110,4 +110,4 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             Process.Start(resultsFullName);
         }
     }
-}com
+}
