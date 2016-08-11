@@ -1,21 +1,51 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using Extensions.CollectionExtensions;
+using System.Threading;
+using MichaelBrandonMorris.Extensions.CollectionExtensions;
 
 namespace MichaelBrandonMorris.FileSystemSizeInfoTool
 {
     internal class FileSystemSizeInfoGetter
     {
-        private const int RootLevel = 0;
         private const int BytesInMegaByte = 1000000;
+        private const int RootLevel = 0;
 
-        private HashSet<DirectoryInfo> SearchDirectories
+        internal FileSystemSizeInfoGetter(
+            CancellationToken cancellationToken,
+            IEnumerable<string> searchPaths,
+            IEnumerable<string> excludedPaths,
+            Scope scope,
+            bool shouldExcludeExtensions,
+            IEnumerable<string> extensions = null,
+            int? minFileSize = null,
+            int? maxFileSize = null,
+            int? minFolderSize = null,
+            int? maxFolderSize = null,
+            int? minFolderContents = null,
+            int? maxFolderContents = null)
         {
-            get;
-        } = new HashSet<DirectoryInfo>();
+            CancellationToken = cancellationToken;
 
-        private IEnumerable<string> ExcludedPaths
+            foreach (var searchPath in searchPaths)
+            {
+                CancellationToken.ThrowIfCancellationRequested();
+                SearchDirectories.Add(new DirectoryInfo(searchPath));
+            }
+
+            ExcludedPaths = excludedPaths;
+            Scope = scope;
+            ShouldExcludeExtensions = shouldExcludeExtensions;
+            Extensions = extensions;
+            MinFileSize = minFileSize*BytesInMegaByte;
+            MaxFileSize = maxFileSize*BytesInMegaByte;
+            MinFolderSize = minFolderSize*BytesInMegaByte;
+            MaxFolderSize = maxFolderSize*BytesInMegaByte;
+            MinFolderContents = minFolderContents*BytesInMegaByte;
+            MaxFolderContents = maxFolderContents*BytesInMegaByte;
+        }
+
+        private CancellationToken CancellationToken
         {
             get;
         }
@@ -26,7 +56,18 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             set;
         }
 
-        private long? MinFileSize
+        internal int MaxPathLevels
+        {
+            get;
+            set;
+        }
+
+        private IEnumerable<string> ExcludedPaths
+        {
+            get;
+        }
+
+        private IEnumerable<string> Extensions
         {
             get;
         }
@@ -36,7 +77,7 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             get;
         }
 
-        private long? MinFolderSize
+        private long? MaxFolderContents
         {
             get;
         }
@@ -46,12 +87,17 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             get;
         }
 
+        private long? MinFileSize
+        {
+            get;
+        }
+
         private long? MinFolderContents
         {
             get;
         }
 
-        private long? MaxFolderContents
+        private long? MinFolderSize
         {
             get;
         }
@@ -61,36 +107,14 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             get;
         }
 
-        internal int MaxPathLevels
+        private HashSet<DirectoryInfo> SearchDirectories
         {
             get;
-            set;
-        }
+        } = new HashSet<DirectoryInfo>();
 
-        internal FileSystemSizeInfoGetter(
-            IEnumerable<string> searchPaths,
-            IEnumerable<string> excludedPaths,
-            Scope scope,
-            int? minFileSize = null,
-            int? maxFileSize = null,
-            int? minFolderSize = null,
-            int? maxFolderSize = null,
-            int? minFolderContents = null,
-            int? maxFolderContents = null)
+        private bool ShouldExcludeExtensions
         {
-            foreach (var searchPath in searchPaths)
-            {
-                SearchDirectories.Add(new DirectoryInfo(searchPath));
-            }
-
-            ExcludedPaths = excludedPaths;
-            Scope = scope;
-            MinFileSize = minFileSize * BytesInMegaByte;
-            MaxFileSize = maxFileSize * BytesInMegaByte;
-            MinFolderSize = minFolderSize * BytesInMegaByte;
-            MaxFolderSize = maxFolderSize * BytesInMegaByte;
-            MinFolderContents = minFolderContents * BytesInMegaByte;
-            MaxFolderContents = maxFolderContents * BytesInMegaByte;
+            get;
         }
 
         internal HashSet<FileSystemSizeInfo> GetFileSystemSizeInfos()
@@ -99,6 +123,8 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
 
             foreach (var directory in SearchDirectories)
             {
+                CancellationToken.ThrowIfCancellationRequested();
+
                 try
                 {
                     GetFileSystemInfos(directory, RootLevel);
@@ -124,37 +150,52 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
                     return;
                 }
 
-                var directorySizeInfo = new FileSystemSizeInfo(directory);
+                try
+                {
+                    var directorySizeInfo = new FileSystemSizeInfo(directory);
 
-                if ((MinFolderSize != null &&
-                    directorySizeInfo.Size < MinFolderSize.Value) || 
+                    if ((MinFolderSize != null &&
+                     directorySizeInfo.Size < MinFolderSize.Value) ||
                     (MaxFolderSize != null &&
-                    directorySizeInfo.Size > MaxFolderSize.Value) || 
+                     directorySizeInfo.Size > MaxFolderSize.Value) ||
                     (MinFolderContents != null &&
-                    directorySizeInfo.ContentsCount < MinFolderContents.Value) ||
+                     directorySizeInfo.ContentsCount < MinFolderContents.Value) ||
                     (MaxFolderContents != null &&
-                    directorySizeInfo.ContentsCount > MaxFolderContents.Value))
-                {
-                    return;
-                }
+                     directorySizeInfo.ContentsCount > MaxFolderContents.Value))
+                    {
+                        return;
+                    }
 
-                if (directorySizeInfo.PathLevels > MaxPathLevels)
-                {
-                    MaxPathLevels = directorySizeInfo.PathLevels;
-                }
+                    if (directorySizeInfo.PathLevels > MaxPathLevels)
+                    {
+                        MaxPathLevels = directorySizeInfo.PathLevels;
+                    }
 
-                FileSystemSizeInfos.Add(directorySizeInfo);
+                    FileSystemSizeInfos.Add(directorySizeInfo);
+                }
+                catch (UnauthorizedAccessException)
+                {
+                    
+                }
 
                 foreach (var fileSystemInfo in directory.GetFileSystemInfos())
                 {
+                    CancellationToken.ThrowIfCancellationRequested();
+
                     var fileInfo = fileSystemInfo as FileInfo;
 
                     if (fileInfo != null)
                     {
                         if ((MinFileSize != null &&
                              fileInfo.Length < MinFileSize.Value) ||
-                             (MaxFileSize != null && 
-                             fileInfo.Length > MaxFileSize.Value))
+                            (MaxFileSize != null &&
+                             fileInfo.Length > MaxFileSize.Value) ||
+                            (ShouldExcludeExtensions &&
+                             Extensions.ContainsIgnoreCase(
+                                 fileInfo.Extension)) ||
+                            (!ShouldExcludeExtensions &&
+                             !Extensions.ContainsIgnoreCase(
+                                 fileInfo.Extension)))
                         {
                             continue;
                         }
@@ -172,10 +213,10 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
 
                     var directoryInfo = fileSystemInfo as DirectoryInfo;
 
-                    if (directoryInfo == null || 
-                        Scope == Scope.NoChildren || 
-                        (Scope == Scope.ImmediateChildren && 
-                        currentLevel > 0))
+                    if (directoryInfo == null ||
+                        Scope == Scope.NoChildren ||
+                        (Scope == Scope.ImmediateChildren &&
+                         currentLevel > 0))
                     {
                         continue;
                     }
@@ -185,7 +226,6 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             }
             catch (Exception)
             {
-                
                 throw;
             }
         }

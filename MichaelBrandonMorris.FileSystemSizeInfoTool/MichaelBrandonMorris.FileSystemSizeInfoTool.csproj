@@ -28,7 +28,7 @@
     <TargetCulture>en</TargetCulture>
     <ProductName>File System Size Info Tool</ProductName>
     <PublisherName>IT Tools</PublisherName>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -71,9 +71,6 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Extensions">
-      <HintPath>..\..\Extensions\Extensions\bin\Debug\Extensions.dll</HintPath>
-    </Reference>
     <Reference Include="GalaSoft.MvvmLight, Version=5.3.0.19026, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
       <Private>True</Private>
@@ -89,6 +86,9 @@
     <Reference Include="MichaelBrandonMorris.DynamicText">
       <HintPath>..\..\MichaelBrandonMorris.DynamicText\MichaelBrandonMorris.DynamicText\bin\Release\MichaelBrandonMorris.DynamicText.dll</HintPath>
     </Reference>
+    <Reference Include="MichaelBrandonMorris.Extensions">
+      <HintPath>C:\Users\kng1itcoop\Documents\Visual Studio 2015\Projects\MichaelBrandonMorris.Extensions\MichaelBrandonMorris.Extensions\bin\Release\MichaelBrandonMorris.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="MichaelBrandonMorris.ValueConverters">
       <HintPath>..\..\ValueConverters\ValueConverters\bin\Release\MichaelBrandonMorris.ValueConverters.dll</HintPath>
     </Reference>
@@ -98,6 +98,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
       <Private>True</Private>
@@ -143,11 +144,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AboutWindow.xaml.cs">
+      <DependentUpon>AboutWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FileSystemSizeInfoChecker.cs" />
     <Compile Include="FileSystemSizeInfo.cs" />
     <Compile Include="FileSystemSizeInfoFormatter.cs" />
     <Compile Include="FileSystemSizeInfoGetter.cs" />
     <Compile Include="ViewModel.cs" />
+    <Page Include="AboutWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

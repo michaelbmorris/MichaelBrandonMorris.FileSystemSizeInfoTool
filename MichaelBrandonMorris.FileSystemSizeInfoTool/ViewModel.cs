@@ -1,19 +1,26 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Deployment.Application;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using GalaSoft.MvvmLight.CommandWpf;
 using MichaelBrandonMorris.DynamicText;
+using static System.IO.Path;
 
 namespace MichaelBrandonMorris.FileSystemSizeInfoTool
 {
     internal class ViewModel : INotifyPropertyChanged
     {
+        private static readonly string HelpFile =
+            Combine(Combine("Resources", "Help"), "Help.chm");
+
+        private AboutWindow _aboutWindow;
         private bool _combinedPathsIsChecked;
-        private bool _excludedExtensionsIsChecked;
-        private bool _includedExtensionsIsChecked;
+        private bool _excludeExtensionsIsChecked;
+        private int _extensionsSelectorIndex;
         private bool _isBusy;
         private int _maxFileSize;
         private bool _maxFileSizeIsChecked;
@@ -34,12 +41,13 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
         private bool _scopeImmediateChildrenIsChecked;
         private bool _scopeNoChildrenIsChecked;
         private bool _splitPathsIsChecked;
-
-        public ICommand AddExcludedExtension => new RelayCommand(
-            ExecuteAddExcludedExtension, CanAddExcludedExtension);
+        private Process _userGuide;
 
         public ICommand AddExcludedPath => new RelayCommand(
             ExecuteAddExcludedPath, CanAddExcludedPath);
+
+        public ICommand AddExtension => new RelayCommand(
+            ExecuteAddExtension, CanAddExtension);
 
         public ICommand AddSearchPath => new RelayCommand(
             ExecuteAddSearchPath, CanAddSearchPath);
@@ -64,59 +72,54 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             }
         }
 
-        public DynamicTextCollection ExcludedExtensions
-        {
-            get;
-        } = new DynamicTextCollection();
-
-        public bool ExcludedExtensionsIsChecked
-        {
-            get
-            {
-                return _excludedExtensionsIsChecked;
-            }
-            set
-            {
-                if (_excludedExtensionsIsChecked)
-                {
-                    return;
-                }
-
-                _excludedExtensionsIsChecked = value;
-                NotifyPropertyChanged();
-            }
-        }
-
         public ObservableCollection<DynamicDirectoryPath> ExcludedPaths
         {
             get;
         } = new DynamicDirectoryPathCollection();
 
-        public ICommand GetFileSizeInfo => new RelayCommand(
-            ExecuteGetFileSizeInfo, CanGetFileSizeInfo);
-
-        public DynamicTextCollection IncludedExtensions
-        {
-            get;
-        } = new DynamicTextCollection();
-
-        public bool IncludedExtensionsIsChecked
+        public bool ExcludeExtensionsIsChecked
         {
             get
             {
-                return _includedExtensionsIsChecked;
+                return _excludeExtensionsIsChecked;
             }
             set
             {
-                if (_includedExtensionsIsChecked == value)
+                if (_excludeExtensionsIsChecked)
                 {
                     return;
                 }
 
-                _includedExtensionsIsChecked = value;
+                _excludeExtensionsIsChecked = value;
                 NotifyPropertyChanged();
             }
         }
+
+        public DynamicTextCollection Extensions
+        {
+            get;
+        } = new DynamicTextCollection();
+
+        public int ExtensionsSelectorIndex
+        {
+            get
+            {
+                return _extensionsSelectorIndex;
+            }
+            set
+            {
+                if (_extensionsSelectorIndex == value)
+                {
+                    return;
+                }
+
+                _extensionsSelectorIndex = value;
+                NotifyPropertyChanged();
+            }
+        }
+
+        public ICommand GetFileSizeInfo => new RelayCommand(
+            ExecuteGetFileSizeInfo, CanGetFileSizeInfo);
 
         public bool IsBusy
         {
@@ -412,13 +415,13 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
         public ICommand OpenUserGuide => new RelayCommand(
             ExecuteOpenUserGuide);
 
-        public ICommand RemoveExcludedExtension =>
-            new RelayCommand<DynamicText.DynamicText>(
-                ExecuteRemoveExcludedExtension, CanRemoveExcludedExtension);
-
         public ICommand RemoveExcludedPath =>
             new RelayCommand<DynamicDirectoryPath>(
                 ExecuteRemoveExcludedPath, CanRemoveExcludedPath);
+
+        public ICommand RemoveExtension =>
+            new RelayCommand<DynamicText.DynamicText>(
+                ExecuteRemoveExtension, CanRemoveExtension);
 
         public ICommand RemoveSearchPath =>
             new RelayCommand<DynamicDirectoryPath>(
@@ -501,6 +504,66 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             }
         }
 
+        public string Version
+        {
+            get
+            {
+                string version;
+
+                try
+                {
+                    version =
+                        ApplicationDeployment.CurrentDeployment.CurrentVersion
+                            .ToString();
+                }
+                catch (InvalidDeploymentException)
+                {
+                    version = "Dev";
+                }
+
+                return version;
+            }
+        }
+
+        private AboutWindow AboutWindow
+        {
+            get
+            {
+                if (_aboutWindow == null || !_aboutWindow.IsVisible)
+                {
+                    _aboutWindow = new AboutWindow();
+                }
+
+                return _aboutWindow;
+            }
+        }
+
+        private FileSystemSizeInfoChecker FileSystemSizeInfoChecker
+        {
+            get;
+            set;
+        }
+
+        private Process UserGuide
+        {
+            get
+            {
+                if (_userGuide != null && !_userGuide.HasExited)
+                {
+                    _userGuide.Kill();
+                }
+                _userGuide = new Process
+                {
+                    StartInfo =
+                    {
+                        FileName = HelpFile
+                    }
+                };
+
+                return _userGuide;
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         public Scope GetSelectedScope()
@@ -523,14 +586,14 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             throw new ArgumentOutOfRangeException();
         }
 
-        private bool CanAddExcludedExtension()
-        {
-            return ExcludedExtensions.All(x => !x.IsNullOrWhiteSpace());
-        }
-
         private bool CanAddExcludedPath()
         {
             return ExcludedPaths.All(x => !x.IsNullOrWhiteSpace());
+        }
+
+        private bool CanAddExtension()
+        {
+            return Extensions.All(x => !x.IsNullOrWhiteSpace());
         }
 
         private bool CanAddSearchPath()
@@ -543,17 +606,11 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             return IsBusy;
         }
 
-        // TODO
         private bool CanGetFileSizeInfo()
         {
-            return SearchPaths.ContainsText() && PathDisplayOptionIsChecked();
-        }
-
-        private bool CanRemoveExcludedExtension(
-            DynamicText.DynamicText excludedExtension)
-        {
-            return ExcludedExtensions.Count > 1 ||
-                   ExcludedExtensions.All(x => !x.IsNullOrWhiteSpace());
+            return SearchPaths.ContainsText() &&
+                   PathDisplayOptionIsChecked() &&
+                   ScopeIsSelected();
         }
 
         private bool CanRemoveExcludedPath(
@@ -563,6 +620,13 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
                    ExcludedPaths.All(x => !x.IsNullOrWhiteSpace());
         }
 
+        private bool CanRemoveExtension(
+            DynamicText.DynamicText excludedExtension)
+        {
+            return Extensions.Count > 1 ||
+                   Extensions.All(x => !x.IsNullOrWhiteSpace());
+        }
+
         private bool CanRemoveSearchPath(
             DynamicDirectoryPath searchPath = null)
         {
@@ -570,13 +634,14 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
                    SearchPaths.All(x => !x.IsNullOrWhiteSpace());
         }
 
-        private void ExecuteAddExcludedExtension()
-        {
-        }
-
         private void ExecuteAddExcludedPath()
         {
             ExcludedPaths.Add(new DynamicDirectoryPath());
+        }
+
+        private void ExecuteAddExtension()
+        {
+            Extensions.Add(new DynamicText.DynamicText());
         }
 
         private void ExecuteAddSearchPath()
@@ -586,6 +651,7 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
 
         private void ExecuteCancel()
         {
+            FileSystemSizeInfoChecker.Cancel();
         }
 
         private async void ExecuteGetFileSizeInfo()
@@ -620,11 +686,19 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
                 ? (int?) MaxFolderContents
                 : null;
 
-            var fileSizeChecker = new FileSizeChecker(
+            var extensions = from x in Extensions
+                where !x.IsNullOrWhiteSpace()
+                select x.Text;
+
+            var shouldExcludeExtensions = ExtensionsSelectorIndex == 0;
+
+            FileSystemSizeInfoChecker = new FileSystemSizeInfoChecker(
                 searchPaths,
                 excludedPaths,
                 GetSelectedScope(),
                 SplitPathsIsChecked,
+                shouldExcludeExtensions,
+                extensions,
                 minFileSize,
                 maxFileSize,
                 minFolderSize,
@@ -632,24 +706,38 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
                 minFolderContents,
                 maxFolderContents);
 
-            await fileSizeChecker.Execute();
+            IsBusy = true;
+
+            try
+            {
+                await FileSystemSizeInfoChecker.Execute();
+            }
+            catch (OperationCanceledException)
+            {
+                ShowMessage("Operation was cancelled.");
+            }
+
+            IsBusy = false;
         }
 
         // TODO
         private void ExecuteOpenAboutWindow()
         {
-            throw new NotImplementedException();
+            AboutWindow.Show();
+            AboutWindow.Activate();
         }
 
         // TODO
         private void ExecuteOpenUserGuide()
         {
-            throw new NotImplementedException();
-        }
-
-        private void ExecuteRemoveExcludedExtension(
-            DynamicText.DynamicText excludedExtension)
-        {
+            try
+            {
+                UserGuide.Start();
+            }
+            catch (Exception)
+            {
+                ShowMessage("User guide could not be opened.");
+            }
         }
 
         private void ExecuteRemoveExcludedPath(
@@ -662,6 +750,19 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             else
             {
                 ExcludedPaths.First().Text = string.Empty;
+            }
+        }
+
+        private void ExecuteRemoveExtension(
+            DynamicText.DynamicText excludedExtension)
+        {
+            if (Extensions.Count > 1)
+            {
+                Extensions.Remove(excludedExtension);
+            }
+            else
+            {
+                Extensions.First().Text = string.Empty;
             }
         }
 
@@ -689,6 +790,20 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
         private bool PathDisplayOptionIsChecked()
         {
             return CombinedPathsIsChecked || SplitPathsIsChecked;
+        }
+
+        private bool ScopeIsSelected()
+        {
+            return ScopeAllChildrenIsChecked ||
+                   ScopeImmediateChildrenIsChecked ||
+                   ScopeNoChildrenIsChecked;
+        }
+
+        private void ShowMessage(string message)
+        {
+            Message = message + "\n\nDouble-click to dismiss.";
+            MessageIsVisible = true;
+            MessageZIndex = 1;
         }
     }
 }

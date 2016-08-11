@@ -120,6 +120,7 @@
                                  GroupName="Scope"
                                  IsChecked="{Binding ScopeAllChildrenIsChecked}"
                                  Margin="5 5 5 0" />
+                    <Separator />
                     <Label Content="Exclude files that match the following rules:" />
                     <DockPanel LastChildFill="False"
                                Margin="5 0 5 0">
@@ -139,14 +140,18 @@
                         <xctk:IntegerUpDown DockPanel.Dock="Right"
                                             Value="{Binding MaxFileSize}" />
                     </DockPanel>
+                    <DockPanel>
+                        <ComboBox Margin="5 5 5 5"
+                                  SelectedIndex="{Binding ExtensionsSelectorIndex, FallbackValue=0}">
+                            <ComboBoxItem Content="Have" />
+                            <ComboBoxItem Content="Do not have" />
+                        </ComboBox>
+                        <Label Content="the following extensions:" />
+                    </DockPanel>
                     <DockPanel LastChildFill="True">
-                        <CheckBox Content="Have the following extensions:"
-                                  DockPanel.Dock="Top"
-                                  IsChecked="{Binding ExcludedExtensionsIsChecked}"
-                                  Margin="5 5 5 5"/>
-                        <ListBox ItemsSource="{Binding ExcludedExtensions}"
-                             BorderThickness="0"
-                             Margin="5 0 5 0">
+                        <ListBox ItemsSource="{Binding Extensions}"
+                                 BorderThickness="0"
+                                 Margin="5 0 5 0">
                             <ListBox.ItemContainerStyle>
                                 <Style TargetType="ListBoxItem">
                                     <Setter Property="Template">
@@ -162,77 +167,31 @@
                                 <DataTemplate>
                                     <DockPanel LastChildFill="True">
                                         <Button DockPanel.Dock="Right"
-                                            Content="+"
-                                            Command="{Binding DataContext.AddExcludedExtension,
+                                                Content="+"
+                                                Command="{Binding DataContext.AddExtension,
                                                 RelativeSource={RelativeSource AncestorType=ListBox}}"
-                                            CommandParameter="{Binding}"
-                                            Visibility="{Binding AddButtonIsVisible, 
+                                                CommandParameter="{Binding}"
+                                                Visibility="{Binding AddButtonIsVisible, 
                                         Converter={StaticResource BooleanToVisibilityHiddenConverter}, 
                                         FallbackValue=Hidden}" />
                                         <Button DockPanel.Dock="Right"
-                                            Content="-"
-                                            Command="{Binding DataContext.RemoveExcludedExtension, 
+                                                Content="-"
+                                                Command="{Binding DataContext.RemoveExtension, 
                                                 RelativeSource={RelativeSource AncestorType=ListBox}}"
-                                            CommandParameter="{Binding}" />
+                                                CommandParameter="{Binding}" />
                                         <TextBox DockPanel.Dock="Left"
-                                             Text="{Binding Text,
+                                                 Text="{Binding Text,
                                                 Mode=TwoWay,
                                                 UpdateSourceTrigger=PropertyChanged}"
 
-                                             HorizontalAlignment="Stretch"
-                                             HorizontalContentAlignment="Stretch" />
+                                                 HorizontalAlignment="Stretch"
+                                                 HorizontalContentAlignment="Stretch" />
                                     </DockPanel>
                                 </DataTemplate>
                             </ListBox.ItemTemplate>
                         </ListBox>
                     </DockPanel>
-                    <DockPanel LastChildFill="True">
-                        <CheckBox Content="Do not have the following extensions:"
-                                  DockPanel.Dock="Top"
-                                  IsChecked="{Binding IncludedExtensionsIsChecked}"
-                                  Margin="5 5 5 5"/>
-                        <ListBox ItemsSource="{Binding IncludedExtensions}"
-                             BorderThickness="0"
-                             Margin="5 0 5 0">
-                            <ListBox.ItemContainerStyle>
-                                <Style TargetType="ListBoxItem">
-                                    <Setter Property="Template">
-                                        <Setter.Value>
-                                            <ControlTemplate TargetType="ListBoxItem">
-                                                <ContentPresenter />
-                                            </ControlTemplate>
-                                        </Setter.Value>
-                                    </Setter>
-                                </Style>
-                            </ListBox.ItemContainerStyle>
-                            <ListBox.ItemTemplate>
-                                <DataTemplate>
-                                    <DockPanel LastChildFill="True">
-                                        <Button DockPanel.Dock="Right"
-                                            Content="+"
-                                            Command="{Binding DataContext.AddIncludedExtension,
-                                                RelativeSource={RelativeSource AncestorType=ListBox}}"
-                                            CommandParameter="{Binding}"
-                                            Visibility="{Binding AddButtonIsVisible, 
-                                        Converter={StaticResource BooleanToVisibilityHiddenConverter}, 
-                                        FallbackValue=Hidden}" />
-                                        <Button DockPanel.Dock="Right"
-                                            Content="-"
-                                            Command="{Binding DataContext.RemoveIncludedExtension, 
-                                                RelativeSource={RelativeSource AncestorType=ListBox}}"
-                                            CommandParameter="{Binding}" />
-                                        <TextBox DockPanel.Dock="Left"
-                                             Text="{Binding Text,
-                                                Mode=TwoWay,
-                                                UpdateSourceTrigger=PropertyChanged}"
-
-                                             HorizontalAlignment="Stretch"
-                                             HorizontalContentAlignment="Stretch" />
-                                    </DockPanel>
-                                </DataTemplate>
-                            </ListBox.ItemTemplate>
-                        </ListBox>
-                    </DockPanel>
+                    <Separator />
                     <Label Content="Exclude folders that match the following rules:" />
                     <DockPanel LastChildFill="False"
                                Margin="5 5 5 0">
@@ -270,6 +229,7 @@
                         <xctk:IntegerUpDown DockPanel.Dock="Right"
                                             Value="{Binding MaxFolderContents}" />
                     </DockPanel>
+                    <Separator />
                     <Label Content="Display paths as:" />
                     <RadioButton Content="Combined (All Levels in One Column)"
                                  IsChecked="{Binding CombinedPathsIsChecked}"
@@ -303,17 +263,17 @@
                 <Border BorderBrush="Black"
                         BorderThickness="1"
                         Visibility="{Binding MessageIsVisible, 
-                    Converter={StaticResource BooleanToVisibilityHiddenConverter}, 
-                    FallbackValue=Hidden}"
+                            Converter={StaticResource BooleanToVisibilityHiddenConverter}, 
+                            FallbackValue=Hidden}"
                         Panel.ZIndex="{Binding MessageZIndex, 
-                    Mode=TwoWay}"
+                            Mode=TwoWay}"
                         HorizontalAlignment="Center"
                         VerticalAlignment="Center"
                         Background="White"
                         MouseLeftButtonDown="UIElement_OnMouseLeftButtonDown">
-                    <TextBlock Text="{Binding Path=Message, 
-                        Mode=TwoWay}"
+                    <TextBlock Text="{Binding Path=Message, Mode=TwoWay}"
                                TextWrapping="Wrap"
+                               Margin="5"
                                MouseLeftButtonDown="UIElement_OnMouseLeftButtonDown" />
                 </Border>
             </Grid>

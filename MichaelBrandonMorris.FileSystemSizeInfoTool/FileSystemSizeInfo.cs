@@ -1,56 +1,17 @@
 ﻿using System.IO;
 using System.Linq;
 using System.Security.Principal;
-using Extensions.PrimitiveExtensions;
+using MichaelBrandonMorris.Extensions.PrimitiveExtensions;
 
 namespace MichaelBrandonMorris.FileSystemSizeInfoTool
 {
     internal class FileSystemSizeInfo
     {
-        internal int FilesCount
-        {
-            get;
-            set;
-        }
-
-        internal int FoldersCount
-        {
-            get;
-            set;
-        }
-
-        internal long Size
-        {
-            get;
-            set;
-        }
-
-        internal int PathLevels => FullNameSplitPath.Length;
-
-        internal int ContentsCount => FilesCount + FoldersCount;
-
-        internal FileSystemInfo FileSystemInfo
-        {
-            get;
-        }
-
-        internal string[] FullNameSplitPath
-        {
-            get;
-        }
-
-        internal string FullName
-        {
-            get;
-        }
-
-        internal string Owner
-        {
-            get;
-        }
+        private const double BytesInMegaByte = 1000000.0;
 
         internal FileSystemSizeInfo(FileInfo file)
         {
+            Extension = file.Extension;
             FilesCount = 0;
             FileSystemInfo = file;
             FoldersCount = 0;
@@ -70,20 +31,22 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
                 Owner = string.Empty;
             }
 
-            Size = file.Length;
+            SizeBytes = file.Length;
         }
 
         internal FileSystemSizeInfo(DirectoryInfo directory)
         {
-            GetContentsAndSize(directory);
+            Extension = string.Empty;
             FileSystemInfo = directory;
             FullName = directory.FullName;
             FullNameSplitPath = directory.FullName.Split(
                 Path.DirectorySeparatorChar).Where(
                     s => !s.IsNullOrWhiteSpace()).ToArray();
 
+            GetContentsAndSize(directory);
+
             try
-            { 
+            {
                 Owner = directory.GetAccessControl().GetOwner(
                     typeof(NTAccount)).ToString();
             }
@@ -91,6 +54,55 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             {
                 Owner = string.Empty;
             }
+        }
+
+        public double Size => SizeBytes/BytesInMegaByte;
+
+        internal int ContentsCount => FilesCount + FoldersCount;
+
+        internal string Extension
+        {
+            get;
+        }
+
+        internal int FilesCount
+        {
+            get;
+            set;
+        }
+
+        internal FileSystemInfo FileSystemInfo
+        {
+            get;
+        }
+
+        internal int FoldersCount
+        {
+            get;
+            set;
+        }
+
+        internal string FullName
+        {
+            get;
+        }
+
+        internal string[] FullNameSplitPath
+        {
+            get;
+        }
+
+        internal string Owner
+        {
+            get;
+        }
+
+        internal int PathLevels => FullNameSplitPath.Length;
+
+        private long SizeBytes
+        {
+            get;
+            set;
         }
 
         private void GetContentsAndSize(DirectoryInfo directory)
@@ -114,7 +126,7 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
                 }
 
                 FilesCount++;
-                Size += fileInfo.Length;
+                SizeBytes += fileInfo.Length;
             }
         }
     }

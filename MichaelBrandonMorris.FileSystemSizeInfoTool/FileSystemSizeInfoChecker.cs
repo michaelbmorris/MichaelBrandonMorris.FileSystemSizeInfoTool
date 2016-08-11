@@ -14,7 +14,7 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
         AllChildren
     }
 
-    internal class FileSizeChecker
+    internal class FileSystemSizeInfoChecker
     {
         private const string CsvExtension = ".csv";
         private const string DateTimeFormat = "yyyyMMddTHHmmss";
@@ -24,11 +24,13 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
         private static readonly string OutputPath = Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "FileSizeTool");
 
-        internal FileSizeChecker(
+        internal FileSystemSizeInfoChecker(
             IEnumerable<string> searchPaths,
             IEnumerable<string> excludedPaths,
             Scope scope,
             bool shouldSplitPaths,
+            bool shouldExcludeExtensions,
+            IEnumerable<string> extensions = null,
             int? minFileSize = null,
             int? maxFileSize = null,
             int? minFolderSize = null,
@@ -37,9 +39,12 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             int? maxFolderContents = null)
         {
             FileSystemSizeInfoGetter = new FileSystemSizeInfoGetter(
+                CancellationToken,
                 searchPaths,
                 excludedPaths,
                 scope,
+                shouldExcludeExtensions,
+                extensions,
                 minFileSize,
                 maxFileSize,
                 minFolderSize,
@@ -54,6 +59,9 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
         {
             get;
         } = new CancellationTokenSource();
+
+        private CancellationToken CancellationToken => 
+            CancellationTokenSource.Token;
 
         private FileSystemSizeInfoGetter FileSystemSizeInfoGetter
         {
@@ -80,12 +88,13 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
                         FileSystemSizeInfoGetter.GetFileSystemSizeInfos();
 
                     Results = new FileSystemSizeInfoFormatter(
+                        CancellationTokenSource.Token,
                         fileSystemSizeInfos,
                         ShouldSplitPaths,
                         FileSystemSizeInfoGetter.MaxPathLevels)
                         .GetFormattedFileSystemSizeInfos();
                 },
-                CancellationTokenSource.Token);
+                CancellationToken);
 
             await task;
 
