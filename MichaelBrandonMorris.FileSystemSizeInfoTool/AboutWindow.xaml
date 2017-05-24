@@ -19,7 +19,7 @@
             </Label.ContentStringFormat>
         </Label>
         <Label>
-            Copyright © Michael Brandon Morris 2016
+            Copyright © Michael Brandon Morris 2016-2017
         </Label>
     </StackPanel>
 </Window>

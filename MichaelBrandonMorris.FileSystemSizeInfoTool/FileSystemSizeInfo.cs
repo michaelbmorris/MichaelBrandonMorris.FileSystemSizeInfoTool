@@ -18,13 +18,17 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             FullName = file.FullName;
 
             FullNameSplitPath = file.FullName.Split(
-                Path.DirectorySeparatorChar).Where(
-                    s => !s.IsNullOrWhiteSpace()).ToArray();
+                    Path.DirectorySeparatorChar)
+                .Where(
+                    s => !s.IsNullOrWhiteSpace())
+                .ToArray();
 
             try
             {
-                Owner = file.GetAccessControl().GetOwner(
-                    typeof(NTAccount)).ToString();
+                Owner = file.GetAccessControl()
+                    .GetOwner(
+                        typeof(NTAccount))
+                    .ToString();
             }
             catch (IdentityNotMappedException)
             {
@@ -40,15 +44,19 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             FileSystemInfo = directory;
             FullName = directory.FullName;
             FullNameSplitPath = directory.FullName.Split(
-                Path.DirectorySeparatorChar).Where(
-                    s => !s.IsNullOrWhiteSpace()).ToArray();
+                    Path.DirectorySeparatorChar)
+                .Where(
+                    s => !s.IsNullOrWhiteSpace())
+                .ToArray();
 
             GetContentsAndSize(directory);
 
             try
             {
-                Owner = directory.GetAccessControl().GetOwner(
-                    typeof(NTAccount)).ToString();
+                Owner = directory.GetAccessControl()
+                    .GetOwner(
+                        typeof(NTAccount))
+                    .ToString();
             }
             catch (IdentityNotMappedException)
             {
@@ -56,30 +64,30 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             }
         }
 
-        public double Size => SizeBytes/BytesInMegaByte;
+        public double Size
+        {
+            get
+            {
+                return SizeBytes / BytesInMegaByte;
+            }
+        }
 
-        internal int ContentsCount => FilesCount + FoldersCount;
+        internal int ContentsCount
+        {
+            get
+            {
+                return FilesCount + FoldersCount;
+            }
+        }
 
         internal string Extension
         {
             get;
         }
 
-        internal int FilesCount
-        {
-            get;
-            set;
-        }
-
         internal FileSystemInfo FileSystemInfo
         {
             get;
-        }
-
-        internal int FoldersCount
-        {
-            get;
-            set;
         }
 
         internal string FullName
@@ -97,7 +105,25 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             get;
         }
 
-        internal int PathLevels => FullNameSplitPath.Length;
+        internal int PathLevels
+        {
+            get
+            {
+                return FullNameSplitPath.Length;
+            }
+        }
+
+        internal int FilesCount
+        {
+            get;
+            set;
+        }
+
+        internal int FoldersCount
+        {
+            get;
+            set;
+        }
 
         private long SizeBytes
         {

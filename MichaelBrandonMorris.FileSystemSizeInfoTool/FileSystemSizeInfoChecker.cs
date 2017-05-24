@@ -17,12 +17,12 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
     internal class FileSystemSizeInfoChecker
     {
         private const string CsvExtension = ".csv";
-        private const string DateTimeFormat = "yyyyMMddTHHmmss";
-
-        private const string ResultsFileName = "FileSizeInfo";
 
         private static readonly string OutputPath = Path.Combine(
-            Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "FileSizeTool");
+            Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
+            "FileSizeTool");
+
+        private const string ResultsFileName = "FileSizeInfo";
 
         internal FileSystemSizeInfoChecker(
             IEnumerable<string> searchPaths,
@@ -55,15 +55,25 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             ShouldSplitPaths = shouldSplitPaths;
         }
 
+        private CancellationToken CancellationToken
+        {
+            get
+            {
+                return CancellationTokenSource.Token;
+            }
+        }
+
         private CancellationTokenSource CancellationTokenSource
         {
             get;
         } = new CancellationTokenSource();
 
-        private CancellationToken CancellationToken => 
-            CancellationTokenSource.Token;
-
         private FileSystemSizeInfoGetter FileSystemSizeInfoGetter
+        {
+            get;
+        }
+
+        private bool ShouldSplitPaths
         {
             get;
         }
@@ -74,9 +84,9 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             set;
         }
 
-        private bool ShouldSplitPaths
+        internal void Cancel()
         {
-            get;
+            CancellationTokenSource.Cancel();
         }
 
         internal async Task Execute()
@@ -88,10 +98,10 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
                         FileSystemSizeInfoGetter.GetFileSystemSizeInfos();
 
                     Results = new FileSystemSizeInfoFormatter(
-                        CancellationTokenSource.Token,
-                        fileSystemSizeInfos,
-                        ShouldSplitPaths,
-                        FileSystemSizeInfoGetter.MaxPathLevels)
+                            CancellationTokenSource.Token,
+                            fileSystemSizeInfos,
+                            ShouldSplitPaths,
+                            FileSystemSizeInfoGetter.MaxPathLevels)
                         .GetFormattedFileSystemSizeInfos();
                 },
                 CancellationToken);
@@ -102,16 +112,11 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             WriteAndOpenResults(now);
         }
 
-        internal void Cancel()
-        {
-            CancellationTokenSource.Cancel();
-        }
-
         private void WriteAndOpenResults(DateTime timeStamp)
         {
             var resultsFileName =
-                $"{ResultsFileName} - " +
-                $"{timeStamp.ToString(DateTimeFormat)}{CsvExtension}";
+                $"{ResultsFileName} - "
+                + $"{timeStamp:yyyyMMddTHHmmss}{CsvExtension}";
 
             var resultsFullName = Path.Combine(OutputPath, resultsFileName);
             Directory.CreateDirectory(OutputPath);

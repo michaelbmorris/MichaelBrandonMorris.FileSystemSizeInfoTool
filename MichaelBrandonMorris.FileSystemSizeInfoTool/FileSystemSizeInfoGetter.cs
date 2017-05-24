@@ -37,17 +37,12 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             Scope = scope;
             ShouldExcludeExtensions = shouldExcludeExtensions;
             Extensions = extensions;
-            MinFileSize = minFileSize*BytesInMegaByte;
-            MaxFileSize = maxFileSize*BytesInMegaByte;
-            MinFolderSize = minFolderSize*BytesInMegaByte;
-            MaxFolderSize = maxFolderSize*BytesInMegaByte;
-            MinFolderContents = minFolderContents*BytesInMegaByte;
-            MaxFolderContents = maxFolderContents*BytesInMegaByte;
-        }
-
-        private CancellationToken CancellationToken
-        {
-            get;
+            MinFileSize = minFileSize * BytesInMegaByte;
+            MaxFileSize = maxFileSize * BytesInMegaByte;
+            MinFolderSize = minFolderSize * BytesInMegaByte;
+            MaxFolderSize = maxFolderSize * BytesInMegaByte;
+            MinFolderContents = minFolderContents * BytesInMegaByte;
+            MaxFolderContents = maxFolderContents * BytesInMegaByte;
         }
 
         internal HashSet<FileSystemSizeInfo> FileSystemSizeInfos
@@ -60,6 +55,11 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
         {
             get;
             set;
+        }
+
+        private CancellationToken CancellationToken
+        {
+            get;
         }
 
         private IEnumerable<string> ExcludedPaths
@@ -140,7 +140,8 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
         }
 
         private void GetFileSystemInfos(
-            DirectoryInfo directory, int currentLevel)
+            DirectoryInfo directory,
+            int currentLevel)
         {
             try
             {
@@ -154,16 +155,16 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
                 {
                     var directorySizeInfo = new FileSystemSizeInfo(directory);
 
-                    if ((MinFolderSize != null
-                         && directorySizeInfo.Size < MinFolderSize.Value)
-                        || (MaxFolderSize != null
-                            && directorySizeInfo.Size > MaxFolderSize.Value)
-                        || (MinFolderContents != null
-                            && directorySizeInfo.ContentsCount
-                            < MinFolderContents.Value)
-                        || (MaxFolderContents != null
-                            && directorySizeInfo.ContentsCount
-                            > MaxFolderContents.Value))
+                    if (MinFolderSize != null
+                        && directorySizeInfo.Size < MinFolderSize.Value
+                        || MaxFolderSize != null
+                        && directorySizeInfo.Size > MaxFolderSize.Value
+                        || MinFolderContents != null
+                        && directorySizeInfo.ContentsCount
+                        < MinFolderContents.Value
+                        || MaxFolderContents != null
+                        && directorySizeInfo.ContentsCount
+                        > MaxFolderContents.Value)
                     {
                         return;
                     }
@@ -177,7 +178,6 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
                 }
                 catch (UnauthorizedAccessException)
                 {
-
                 }
 
                 foreach (var fileSystemInfo in directory.GetFileSystemInfos())
@@ -188,16 +188,16 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
 
                     if (fileInfo != null)
                     {
-                        if ((MinFileSize != null
-                             && fileInfo.Length < MinFileSize.Value)
-                            || (MaxFileSize != null
-                                && fileInfo.Length > MaxFileSize.Value)
-                            || (ShouldExcludeExtensions
-                                && Extensions.ContainsIgnoreCase(
-                                    fileInfo.Extension))
-                            || (!ShouldExcludeExtensions
-                                && !Extensions.ContainsIgnoreCase(
-                                    fileInfo.Extension)))
+                        if (MinFileSize != null
+                            && fileInfo.Length < MinFileSize.Value
+                            || MaxFileSize != null
+                            && fileInfo.Length > MaxFileSize.Value
+                            || ShouldExcludeExtensions
+                            && Extensions.ContainsIgnoreCase(
+                                fileInfo.Extension)
+                            || !ShouldExcludeExtensions
+                            && !Extensions.ContainsIgnoreCase(
+                                fileInfo.Extension))
                         {
                             continue;
                         }
@@ -217,8 +217,8 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
 
                     if (directoryInfo == null
                         || Scope == Scope.NoChildren
-                        || (Scope == Scope.ImmediateChildren
-                            && currentLevel > 0))
+                        || Scope == Scope.ImmediateChildren
+                        && currentLevel > 0)
                     {
                         continue;
                     }
@@ -228,7 +228,6 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             }
             catch (UnauthorizedAccessException)
             {
-
             }
         }
     }
