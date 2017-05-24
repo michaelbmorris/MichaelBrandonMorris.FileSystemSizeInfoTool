@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MichaelBrandonMorris.FileSystemSizeInfoTool", "A:\MichaelBrandonMorris.FileSystemSizeInfoTool\MichaelBrandonMorris.FileSystemSizeInfoTool\MichaelBrandonMorris.FileSystemSizeInfoTool.csproj", "{79E8AB1F-CEC7-4E85-84F9-01FE06761010}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MichaelBrandonMorris.FileSystemSizeInfoTool", "MichaelBrandonMorris.FileSystemSizeInfoTool\MichaelBrandonMorris.FileSystemSizeInfoTool.csproj", "{79E8AB1F-CEC7-4E85-84F9-01FE06761010}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

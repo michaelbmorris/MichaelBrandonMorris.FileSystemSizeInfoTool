@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 using System.Threading;
 using MichaelBrandonMorris.Extensions.OtherExtensions;
@@ -7,29 +8,15 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
 {
     internal class FileSystemSizeInfoFormatter
     {
-        private const string ResultNumberHeader = "#";
-        private const string LevelHeader = "Level";
+        private const string FileContentsHeader = "# Files";
         private const string FileExtensionHeader = "File Extension";
         private const string FolderContentsHeader = "# Folders";
-        private const string FileContentsHeader = "# Files";
-        private const string SizeHeader = "Size (MB)";
-        private const string OwnerHeader = "Owner";
+        private const string LevelHeader = "Level";
         private const int MaxResults = 1048574;
-
-        private IEnumerable<FileSystemSizeInfo> FileSystemSizeInfos
-        {
-            get;
-        }
-
-        private bool ShouldSplitPaths
-        {
-            get;
-        }
-
-        private int? MaxPathLevels
-        {
-            get;
-        }
+        private const string OwnerHeader = "Owner";
+        private const string PathHeader = "Path";
+        private const string ResultNumberHeader = "#";
+        private const string SizeHeader = "Size (MB)";
 
         internal FileSystemSizeInfoFormatter(
             CancellationToken cancellationToken,
@@ -48,6 +35,21 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             get;
         }
 
+        private IEnumerable<FileSystemSizeInfo> FileSystemSizeInfos
+        {
+            get;
+        }
+
+        private int? MaxPathLevels
+        {
+            get;
+        }
+
+        private bool ShouldSplitPaths
+        {
+            get;
+        }
+
         internal string GetFormattedFileSystemSizeInfos()
         {
             var formattedFileSystemSizeInfos = new StringBuilder();
@@ -61,6 +63,10 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
                     CancellationToken.ThrowIfCancellationRequested();
                     header.AppendCsv($"{LevelHeader} {i}");
                 }
+            }
+            else
+            {
+                header.AppendCsv(PathHeader);
             }
 
             header.AppendCsv(FileExtensionHeader);
@@ -113,7 +119,8 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
                     fileSystemSizeInfo.FilesCount.ToString());
 
                 formattedFileSystemSizeInfos.AppendCsv(
-                    fileSystemSizeInfo.Size.ToString());
+                    fileSystemSizeInfo.Size.ToString(
+                        CultureInfo.InvariantCulture));
 
                 formattedFileSystemSizeInfos.AppendCsv(
                     fileSystemSizeInfo.Owner);

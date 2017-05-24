@@ -68,7 +68,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GalaSoft.MvvmLight, Version=5.3.0.19026, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
@@ -84,13 +84,13 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="MichaelBrandonMorris.DynamicText">
-      <HintPath>..\..\MichaelBrandonMorris.DynamicText\MichaelBrandonMorris.DynamicText\bin\Release\MichaelBrandonMorris.DynamicText.dll</HintPath>
+      <HintPath>..\..\MichaelBrandonMorris.DynamicText\MichaelBrandonMorris.DynamicText\bin\Debug\MichaelBrandonMorris.DynamicText.dll</HintPath>
     </Reference>
     <Reference Include="MichaelBrandonMorris.Extensions">
-      <HintPath>C:\Users\kng1itcoop\Documents\Visual Studio 2015\Projects\MichaelBrandonMorris.Extensions\MichaelBrandonMorris.Extensions\bin\Release\MichaelBrandonMorris.Extensions.dll</HintPath>
+      <HintPath>..\..\MichaelBrandonMorris.Extensions\MichaelBrandonMorris.Extensions\bin\Debug\MichaelBrandonMorris.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="MichaelBrandonMorris.ValueConverters">
-      <HintPath>..\..\ValueConverters\ValueConverters\bin\Release\MichaelBrandonMorris.ValueConverters.dll</HintPath>
+      <HintPath>..\..\MichaelBrandonMorris.ValueConverters\MichaelBrandonMorris.ValueConverters\bin\Debug\MichaelBrandonMorris.ValueConverters.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>

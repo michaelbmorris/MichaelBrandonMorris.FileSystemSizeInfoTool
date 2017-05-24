@@ -144,8 +144,8 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
         {
             try
             {
-                if (!ExcludedPaths.IsNullOrEmpty() &&
-                    ExcludedPaths.ContainsIgnoreCase(directory.FullName))
+                if (!ExcludedPaths.IsNullOrEmpty()
+                    && ExcludedPaths.ContainsIgnoreCase(directory.FullName))
                 {
                     return;
                 }
@@ -154,14 +154,16 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
                 {
                     var directorySizeInfo = new FileSystemSizeInfo(directory);
 
-                    if ((MinFolderSize != null &&
-                     directorySizeInfo.Size < MinFolderSize.Value) ||
-                    (MaxFolderSize != null &&
-                     directorySizeInfo.Size > MaxFolderSize.Value) ||
-                    (MinFolderContents != null &&
-                     directorySizeInfo.ContentsCount < MinFolderContents.Value) ||
-                    (MaxFolderContents != null &&
-                     directorySizeInfo.ContentsCount > MaxFolderContents.Value))
+                    if ((MinFolderSize != null
+                         && directorySizeInfo.Size < MinFolderSize.Value)
+                        || (MaxFolderSize != null
+                            && directorySizeInfo.Size > MaxFolderSize.Value)
+                        || (MinFolderContents != null
+                            && directorySizeInfo.ContentsCount
+                            < MinFolderContents.Value)
+                        || (MaxFolderContents != null
+                            && directorySizeInfo.ContentsCount
+                            > MaxFolderContents.Value))
                     {
                         return;
                     }
@@ -175,7 +177,7 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
                 }
                 catch (UnauthorizedAccessException)
                 {
-                    
+
                 }
 
                 foreach (var fileSystemInfo in directory.GetFileSystemInfos())
@@ -186,16 +188,16 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
 
                     if (fileInfo != null)
                     {
-                        if ((MinFileSize != null &&
-                             fileInfo.Length < MinFileSize.Value) ||
-                            (MaxFileSize != null &&
-                             fileInfo.Length > MaxFileSize.Value) ||
-                            (ShouldExcludeExtensions &&
-                             Extensions.ContainsIgnoreCase(
-                                 fileInfo.Extension)) ||
-                            (!ShouldExcludeExtensions &&
-                             !Extensions.ContainsIgnoreCase(
-                                 fileInfo.Extension)))
+                        if ((MinFileSize != null
+                             && fileInfo.Length < MinFileSize.Value)
+                            || (MaxFileSize != null
+                                && fileInfo.Length > MaxFileSize.Value)
+                            || (ShouldExcludeExtensions
+                                && Extensions.ContainsIgnoreCase(
+                                    fileInfo.Extension))
+                            || (!ShouldExcludeExtensions
+                                && !Extensions.ContainsIgnoreCase(
+                                    fileInfo.Extension)))
                         {
                             continue;
                         }
@@ -213,10 +215,10 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
 
                     var directoryInfo = fileSystemInfo as DirectoryInfo;
 
-                    if (directoryInfo == null ||
-                        Scope == Scope.NoChildren ||
-                        (Scope == Scope.ImmediateChildren &&
-                         currentLevel > 0))
+                    if (directoryInfo == null
+                        || Scope == Scope.NoChildren
+                        || (Scope == Scope.ImmediateChildren
+                            && currentLevel > 0))
                     {
                         continue;
                     }
@@ -224,9 +226,9 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
                     GetFileSystemInfos(directoryInfo, currentLevel + 1);
                 }
             }
-            catch (Exception)
+            catch (UnauthorizedAccessException)
             {
-                throw;
+
             }
         }
     }
