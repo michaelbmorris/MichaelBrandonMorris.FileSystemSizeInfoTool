@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="AboutWindow class">
+    <HelpKINode Title="AboutWindow Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.htm" />
+    <HelpKINode Title="AboutWindow Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.htm" />
+    <HelpKINode Title="about AboutWindow class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AboutWindow property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.AboutWindow.htm" />
+  <HelpKINode Title="AboutWindow.AboutWindow constructor" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.-ctor.htm" />
+  <HelpKINode Title="AddExcludedPath property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.AddExcludedPath.htm" />
+  <HelpKINode Title="AddExtension property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.AddExtension.htm" />
+  <HelpKINode Title="AddSearchPath property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.AddSearchPath.htm" />
+  <HelpKINode Title="AllChildren enumeration member" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.Scope.htm" />
+  <HelpKINode Title="AllChildren field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.Scope.AllChildren.htm" />
+  <HelpKINode Title="App class">
+    <HelpKINode Title="App Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.App.htm" />
+    <HelpKINode Title="App Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.App.htm" />
+    <HelpKINode Title="about App class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.App.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.App.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-MichaelBrandonMorris.FileSystemSizeInfoTool.App.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.App.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.App.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BytesInMegaByte field">
+    <HelpKINode Title="BytesInMegaByte Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.BytesInMegaByte.htm" />
+    <HelpKINode Title="BytesInMegaByte Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.BytesInMegaByte.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CanAddExcludedPath method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanAddExcludedPath.htm" />
+  <HelpKINode Title="CanAddExtension method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanAddExtension.htm" />
+  <HelpKINode Title="CanAddSearchPath method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanAddSearchPath.htm" />
+  <HelpKINode Title="CanCancel method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanCancel.htm" />
+  <HelpKINode Title="Cancel method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.Cancel.htm" />
+  <HelpKINode Title="Cancel property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.Cancel.htm" />
+  <HelpKINode Title="CancellationToken property">
+    <HelpKINode Title="CancellationToken Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.CancellationToken.htm" />
+    <HelpKINode Title="CancellationToken Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.CancellationToken.htm" />
+    <HelpKINode Title="CancellationToken Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.CancellationToken.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CancellationTokenSource property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.CancellationTokenSource.htm" />
+  <HelpKINode Title="CanGetFileSizeInfo method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanGetFileSizeInfo.htm" />
+  <HelpKINode Title="CanRemoveExcludedPath method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanRemoveExcludedPath.htm" />
+  <HelpKINode Title="CanRemoveExtension method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanRemoveExtension.htm" />
+  <HelpKINode Title="CanRemoveSearchPath method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanRemoveSearchPath.htm" />
+  <HelpKINode Title="CombinedPathsIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CombinedPathsIsChecked.htm" />
+  <HelpKINode Title="ContentsCount property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.ContentsCount.htm" />
+  <HelpKINode Title="CsvExtension field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.CsvExtension.htm" />
+  <HelpKINode Title="Culture property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.Culture.htm" />
+  <HelpKINode Title="Default property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.Default.htm" />
+  <HelpKINode Title="defaultInstance field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.defaultInstance.htm" />
+  <HelpKINode Title="ExcludedPaths property">
+    <HelpKINode Title="ExcludedPaths Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.ExcludedPaths.htm" />
+    <HelpKINode Title="ExcludedPaths Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExcludedPaths.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExcludeExtensionsIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExcludeExtensionsIsChecked.htm" />
+  <HelpKINode Title="Execute method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.Execute.htm" />
+  <HelpKINode Title="ExecuteAddExcludedPath method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteAddExcludedPath.htm" />
+  <HelpKINode Title="ExecuteAddExtension method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteAddExtension.htm" />
+  <HelpKINode Title="ExecuteAddSearchPath method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteAddSearchPath.htm" />
+  <HelpKINode Title="ExecuteCancel method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteCancel.htm" />
+  <HelpKINode Title="ExecuteGetFileSizeInfo method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteGetFileSizeInfo.htm" />
+  <HelpKINode Title="ExecuteOpenAboutWindow method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteOpenAboutWindow.htm" />
+  <HelpKINode Title="ExecuteOpenUserGuide method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteOpenUserGuide.htm" />
+  <HelpKINode Title="ExecuteRemoveExcludedPath method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteRemoveExcludedPath.htm" />
+  <HelpKINode Title="ExecuteRemoveExtension method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteRemoveExtension.htm" />
+  <HelpKINode Title="ExecuteRemoveSearchPath method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteRemoveSearchPath.htm" />
+  <HelpKINode Title="Extension property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.Extension.htm" />
+  <HelpKINode Title="Extensions property">
+    <HelpKINode Title="Extensions Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.Extensions.htm" />
+    <HelpKINode Title="Extensions Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.Extensions.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExtensionsSelectorIndex property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExtensionsSelectorIndex.htm" />
+  <HelpKINode Title="FileContentsHeader field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.FileContentsHeader.htm" />
+  <HelpKINode Title="FileExtensionHeader field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.FileExtensionHeader.htm" />
+  <HelpKINode Title="FilesCount property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.FilesCount.htm" />
+  <HelpKINode Title="FileSystemInfo property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.FileSystemInfo.htm" />
+  <HelpKINode Title="FileSystemSizeInfo class">
+    <HelpKINode Title="FileSystemSizeInfo Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.htm" />
+    <HelpKINode Title="FileSystemSizeInfo Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.htm" />
+    <HelpKINode Title="about FileSystemSizeInfo class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FileSystemSizeInfo.BytesInMegaByte field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.BytesInMegaByte.htm" />
+  <HelpKINode Title="FileSystemSizeInfo.ContentsCount property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.ContentsCount.htm" />
+  <HelpKINode Title="FileSystemSizeInfo.Extension property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.Extension.htm" />
+  <HelpKINode Title="FileSystemSizeInfo.FilesCount property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.FilesCount.htm" />
+  <HelpKINode Title="FileSystemSizeInfo.FileSystemInfo property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.FileSystemInfo.htm" />
+  <HelpKINode Title="FileSystemSizeInfo.FileSystemSizeInfo constructor" Url="html/Overload-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.-ctor.htm" />
+  <HelpKINode Title="FileSystemSizeInfo.FoldersCount property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.FoldersCount.htm" />
+  <HelpKINode Title="FileSystemSizeInfo.FullName property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.FullName.htm" />
+  <HelpKINode Title="FileSystemSizeInfo.FullNameSplitPath property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.FullNameSplitPath.htm" />
+  <HelpKINode Title="FileSystemSizeInfo.GetContentsAndSize method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.GetContentsAndSize.htm" />
+  <HelpKINode Title="FileSystemSizeInfo.Owner property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.Owner.htm" />
+  <HelpKINode Title="FileSystemSizeInfo.PathLevels property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.PathLevels.htm" />
+  <HelpKINode Title="FileSystemSizeInfo.Size property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.Size.htm" />
+  <HelpKINode Title="FileSystemSizeInfo.SizeBytes property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.SizeBytes.htm" />
+  <HelpKINode Title="FileSystemSizeInfoChecker class">
+    <HelpKINode Title="FileSystemSizeInfoChecker Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.htm" />
+    <HelpKINode Title="FileSystemSizeInfoChecker Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.htm" />
+    <HelpKINode Title="about FileSystemSizeInfoChecker class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FileSystemSizeInfoChecker property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.FileSystemSizeInfoChecker.htm" />
+  <HelpKINode Title="FileSystemSizeInfoChecker.Cancel method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.Cancel.htm" />
+  <HelpKINode Title="FileSystemSizeInfoChecker.CancellationToken property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.CancellationToken.htm" />
+  <HelpKINode Title="FileSystemSizeInfoChecker.CancellationTokenSource property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.CancellationTokenSource.htm" />
+  <HelpKINode Title="FileSystemSizeInfoChecker.CsvExtension field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.CsvExtension.htm" />
+  <HelpKINode Title="FileSystemSizeInfoChecker.Execute method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.Execute.htm" />
+  <HelpKINode Title="FileSystemSizeInfoChecker.FileSystemSizeInfoChecker constructor" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.-ctor.htm" />
+  <HelpKINode Title="FileSystemSizeInfoChecker.FileSystemSizeInfoGetter property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.FileSystemSizeInfoGetter.htm" />
+  <HelpKINode Title="FileSystemSizeInfoChecker.OutputPath field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.OutputPath.htm" />
+  <HelpKINode Title="FileSystemSizeInfoChecker.Results property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.Results.htm" />
+  <HelpKINode Title="FileSystemSizeInfoChecker.ResultsFileName field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.ResultsFileName.htm" />
+  <HelpKINode Title="FileSystemSizeInfoChecker.ShouldSplitPaths property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.ShouldSplitPaths.htm" />
+  <HelpKINode Title="FileSystemSizeInfoChecker.WriteAndOpenResults method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.WriteAndOpenResults.htm" />
+  <HelpKINode Title="FileSystemSizeInfoFormatter class">
+    <HelpKINode Title="FileSystemSizeInfoFormatter Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.htm" />
+    <HelpKINode Title="FileSystemSizeInfoFormatter Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.htm" />
+    <HelpKINode Title="about FileSystemSizeInfoFormatter class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FileSystemSizeInfoFormatter.CancellationToken property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.CancellationToken.htm" />
+  <HelpKINode Title="FileSystemSizeInfoFormatter.FileContentsHeader field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.FileContentsHeader.htm" />
+  <HelpKINode Title="FileSystemSizeInfoFormatter.FileExtensionHeader field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.FileExtensionHeader.htm" />
+  <HelpKINode Title="FileSystemSizeInfoFormatter.FileSystemSizeInfoFormatter constructor" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.-ctor.htm" />
+  <HelpKINode Title="FileSystemSizeInfoFormatter.FileSystemSizeInfos property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.FileSystemSizeInfos.htm" />
+  <HelpKINode Title="FileSystemSizeInfoFormatter.FolderContentsHeader field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.FolderContentsHeader.htm" />
+  <HelpKINode Title="FileSystemSizeInfoFormatter.GetFormattedFileSystemSizeInfos method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.GetFormattedFileSystemSizeInfos.htm" />
+  <HelpKINode Title="FileSystemSizeInfoFormatter.LevelHeader field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.LevelHeader.htm" />
+  <HelpKINode Title="FileSystemSizeInfoFormatter.MaxPathLevels property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.MaxPathLevels.htm" />
+  <HelpKINode Title="FileSystemSizeInfoFormatter.MaxResults field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.MaxResults.htm" />
+  <HelpKINode Title="FileSystemSizeInfoFormatter.OwnerHeader field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.OwnerHeader.htm" />
+  <HelpKINode Title="FileSystemSizeInfoFormatter.PathHeader field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.PathHeader.htm" />
+  <HelpKINode Title="FileSystemSizeInfoFormatter.ResultNumberHeader field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.ResultNumberHeader.htm" />
+  <HelpKINode Title="FileSystemSizeInfoFormatter.ShouldSplitPaths property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.ShouldSplitPaths.htm" />
+  <HelpKINode Title="FileSystemSizeInfoFormatter.SizeHeader field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.SizeHeader.htm" />
+  <HelpKINode Title="FileSystemSizeInfoGetter class">
+    <HelpKINode Title="FileSystemSizeInfoGetter Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.htm" />
+    <HelpKINode Title="FileSystemSizeInfoGetter Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.htm" />
+    <HelpKINode Title="about FileSystemSizeInfoGetter class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FileSystemSizeInfoGetter property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.FileSystemSizeInfoGetter.htm" />
+  <HelpKINode Title="FileSystemSizeInfoGetter.BytesInMegaByte field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.BytesInMegaByte.htm" />
+  <HelpKINode Title="FileSystemSizeInfoGetter.CancellationToken property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.CancellationToken.htm" />
+  <HelpKINode Title="FileSystemSizeInfoGetter.ExcludedPaths property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.ExcludedPaths.htm" />
+  <HelpKINode Title="FileSystemSizeInfoGetter.Extensions property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.Extensions.htm" />
+  <HelpKINode Title="FileSystemSizeInfoGetter.FileSystemSizeInfoGetter constructor" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.-ctor.htm" />
+  <HelpKINode Title="FileSystemSizeInfoGetter.FileSystemSizeInfos property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.FileSystemSizeInfos.htm" />
+  <HelpKINode Title="FileSystemSizeInfoGetter.GetFileSystemInfos method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.GetFileSystemInfos.htm" />
+  <HelpKINode Title="FileSystemSizeInfoGetter.GetFileSystemSizeInfos method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.GetFileSystemSizeInfos.htm" />
+  <HelpKINode Title="FileSystemSizeInfoGetter.MaxFileSize property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MaxFileSize.htm" />
+  <HelpKINode Title="FileSystemSizeInfoGetter.MaxFolderContents property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MaxFolderContents.htm" />
+  <HelpKINode Title="FileSystemSizeInfoGetter.MaxFolderSize property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MaxFolderSize.htm" />
+  <HelpKINode Title="FileSystemSizeInfoGetter.MaxPathLevels property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MaxPathLevels.htm" />
+  <HelpKINode Title="FileSystemSizeInfoGetter.MinFileSize property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MinFileSize.htm" />
+  <HelpKINode Title="FileSystemSizeInfoGetter.MinFolderContents property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MinFolderContents.htm" />
+  <HelpKINode Title="FileSystemSizeInfoGetter.MinFolderSize property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MinFolderSize.htm" />
+  <HelpKINode Title="FileSystemSizeInfoGetter.RootLevel field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.RootLevel.htm" />
+  <HelpKINode Title="FileSystemSizeInfoGetter.Scope property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.Scope.htm" />
+  <HelpKINode Title="FileSystemSizeInfoGetter.SearchDirectories property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.SearchDirectories.htm" />
+  <HelpKINode Title="FileSystemSizeInfoGetter.ShouldExcludeExtensions property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.ShouldExcludeExtensions.htm" />
+  <HelpKINode Title="FileSystemSizeInfos property">
+    <HelpKINode Title="FileSystemSizeInfos Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.FileSystemSizeInfos.htm" />
+    <HelpKINode Title="FileSystemSizeInfos Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.FileSystemSizeInfos.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FolderContentsHeader field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.FolderContentsHeader.htm" />
+  <HelpKINode Title="FoldersCount property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.FoldersCount.htm" />
+  <HelpKINode Title="FullName property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.FullName.htm" />
+  <HelpKINode Title="FullNameSplitPath property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.FullNameSplitPath.htm" />
+  <HelpKINode Title="GetContentsAndSize method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.GetContentsAndSize.htm" />
+  <HelpKINode Title="GetFileSizeInfo property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.GetFileSizeInfo.htm" />
+  <HelpKINode Title="GetFileSystemInfos method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.GetFileSystemInfos.htm" />
+  <HelpKINode Title="GetFileSystemSizeInfos method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.GetFileSystemSizeInfos.htm" />
+  <HelpKINode Title="GetFormattedFileSystemSizeInfos method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.GetFormattedFileSystemSizeInfos.htm" />
+  <HelpKINode Title="GetSelectedScope method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.GetSelectedScope.htm" />
+  <HelpKINode Title="HelpFile field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.HelpFile.htm" />
+  <HelpKINode Title="ImmediateChildren enumeration member" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.Scope.htm" />
+  <HelpKINode Title="ImmediateChildren field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.Scope.ImmediateChildren.htm" />
+  <HelpKINode Title="IsBusy property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.IsBusy.htm" />
+  <HelpKINode Title="LevelHeader field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.LevelHeader.htm" />
+  <HelpKINode Title="MainWindow class">
+    <HelpKINode Title="MainWindow Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.htm" />
+    <HelpKINode Title="MainWindow Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.htm" />
+    <HelpKINode Title="about MainWindow class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MainWindow.MainWindow constructor" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.-ctor.htm" />
+  <HelpKINode Title="MainWindow.UIElement_OnMouseLeftButtonDown method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.UIElement_OnMouseLeftButtonDown.htm" />
+  <HelpKINode Title="MaxFileSize property">
+    <HelpKINode Title="MaxFileSize Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MaxFileSize.htm" />
+    <HelpKINode Title="MaxFileSize Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFileSize.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MaxFileSizeIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFileSizeIsChecked.htm" />
+  <HelpKINode Title="MaxFolderContents property">
+    <HelpKINode Title="MaxFolderContents Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MaxFolderContents.htm" />
+    <HelpKINode Title="MaxFolderContents Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFolderContents.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MaxFolderContentsIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFolderContentsIsChecked.htm" />
+  <HelpKINode Title="MaxFolderSize property">
+    <HelpKINode Title="MaxFolderSize Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFolderSize.htm" />
+    <HelpKINode Title="MaxFolderSize Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MaxFolderSize.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MaxFolderSizeIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFolderSizeIsChecked.htm" />
+  <HelpKINode Title="MaxPathLevels property">
+    <HelpKINode Title="MaxPathLevels Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MaxPathLevels.htm" />
+    <HelpKINode Title="MaxPathLevels Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.MaxPathLevels.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MaxResults field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.MaxResults.htm" />
+  <HelpKINode Title="Message property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.Message.htm" />
+  <HelpKINode Title="MessageIsVisible property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MessageIsVisible.htm" />
+  <HelpKINode Title="MessageZIndex property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MessageZIndex.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.FileSystemSizeInfoTool namespace" Url="html/N-MichaelBrandonMorris.FileSystemSizeInfoTool.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow class">
+    <HelpKINode Title="AboutWindow Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.htm" />
+    <HelpKINode Title="AboutWindow Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.FileSystemSizeInfoTool.App class">
+    <HelpKINode Title="App Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.App.htm" />
+    <HelpKINode Title="App Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.App.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo class">
+    <HelpKINode Title="FileSystemSizeInfo Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.htm" />
+    <HelpKINode Title="FileSystemSizeInfo Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker class">
+    <HelpKINode Title="FileSystemSizeInfoChecker Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.htm" />
+    <HelpKINode Title="FileSystemSizeInfoChecker Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter class">
+    <HelpKINode Title="FileSystemSizeInfoFormatter Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.htm" />
+    <HelpKINode Title="FileSystemSizeInfoFormatter Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter class">
+    <HelpKINode Title="FileSystemSizeInfoGetter Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.htm" />
+    <HelpKINode Title="FileSystemSizeInfoGetter Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow class">
+    <HelpKINode Title="MainWindow Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.htm" />
+    <HelpKINode Title="MainWindow Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.FileSystemSizeInfoTool.Properties namespace" Url="html/N-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources class">
+    <HelpKINode Title="Resources Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.htm" />
+    <HelpKINode Title="Resources Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings class">
+    <HelpKINode Title="Settings Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm" />
+    <HelpKINode Title="Settings Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MichaelBrandonMorris.FileSystemSizeInfoTool.Scope enumeration" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.Scope.htm" />
+  <HelpKINode Title="MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel class">
+    <HelpKINode Title="ViewModel Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm" />
+    <HelpKINode Title="ViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MinFileSize property">
+    <HelpKINode Title="MinFileSize Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFileSize.htm" />
+    <HelpKINode Title="MinFileSize Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MinFileSize.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MinFileSizeIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFileSizeIsChecked.htm" />
+  <HelpKINode Title="MinFolderContents property">
+    <HelpKINode Title="MinFolderContents Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFolderContents.htm" />
+    <HelpKINode Title="MinFolderContents Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MinFolderContents.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MinFolderContentsIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFolderContentsIsChecked.htm" />
+  <HelpKINode Title="MinFolderSize property">
+    <HelpKINode Title="MinFolderSize Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFolderSize.htm" />
+    <HelpKINode Title="MinFolderSize Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MinFolderSize.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MinFolderSizeIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFolderSizeIsChecked.htm" />
+  <HelpKINode Title="NoChildren enumeration member" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.Scope.htm" />
+  <HelpKINode Title="NoChildren field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.Scope.NoChildren.htm" />
+  <HelpKINode Title="NotifyPropertyChanged method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.NotifyPropertyChanged.htm" />
+  <HelpKINode Title="OpenAboutWindow property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.OpenAboutWindow.htm" />
+  <HelpKINode Title="OpenUserGuide property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.OpenUserGuide.htm" />
+  <HelpKINode Title="OutputPath field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.OutputPath.htm" />
+  <HelpKINode Title="Owner property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.Owner.htm" />
+  <HelpKINode Title="OwnerHeader field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.OwnerHeader.htm" />
+  <HelpKINode Title="PathDisplayOptionIsChecked method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.PathDisplayOptionIsChecked.htm" />
+  <HelpKINode Title="PathHeader field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.PathHeader.htm" />
+  <HelpKINode Title="PathLevels property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.PathLevels.htm" />
+  <HelpKINode Title="PropertyChanged event" Url="html/E-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.PropertyChanged.htm" />
+  <HelpKINode Title="RemoveExcludedPath property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.RemoveExcludedPath.htm" />
+  <HelpKINode Title="RemoveExtension property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.RemoveExtension.htm" />
+  <HelpKINode Title="RemoveSearchPath property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.RemoveSearchPath.htm" />
+  <HelpKINode Title="resourceCulture field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.resourceCulture.htm" />
+  <HelpKINode Title="resourceMan field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.resourceMan.htm" />
+  <HelpKINode Title="ResourceManager property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.ResourceManager.htm" />
+  <HelpKINode Title="Resources class">
+    <HelpKINode Title="Resources Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.htm" />
+    <HelpKINode Title="Resources Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.htm" />
+    <HelpKINode Title="about Resources class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.htm" />
+    <HelpKINode Title="constructor" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.-ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Resources.Culture property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.Culture.htm" />
+  <HelpKINode Title="Resources.resourceCulture field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.resourceCulture.htm" />
+  <HelpKINode Title="Resources.resourceMan field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.resourceMan.htm" />
+  <HelpKINode Title="Resources.ResourceManager property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.ResourceManager.htm" />
+  <HelpKINode Title="Resources.Resources constructor" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.-ctor.htm" />
+  <HelpKINode Title="ResultNumberHeader field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.ResultNumberHeader.htm" />
+  <HelpKINode Title="Results property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.Results.htm" />
+  <HelpKINode Title="ResultsFileName field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.ResultsFileName.htm" />
+  <HelpKINode Title="RootLevel field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.RootLevel.htm" />
+  <HelpKINode Title="Scope enumeration" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.Scope.htm" />
+  <HelpKINode Title="Scope property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.Scope.htm" />
+  <HelpKINode Title="Scope.AllChildren field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.Scope.AllChildren.htm" />
+  <HelpKINode Title="Scope.ImmediateChildren field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.Scope.ImmediateChildren.htm" />
+  <HelpKINode Title="Scope.NoChildren field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.Scope.NoChildren.htm" />
+  <HelpKINode Title="ScopeAllChildrenIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ScopeAllChildrenIsChecked.htm" />
+  <HelpKINode Title="ScopeImmediateChildrenIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ScopeImmediateChildrenIsChecked.htm" />
+  <HelpKINode Title="ScopeIsSelected method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ScopeIsSelected.htm" />
+  <HelpKINode Title="ScopeNoChildrenIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ScopeNoChildrenIsChecked.htm" />
+  <HelpKINode Title="SearchDirectories property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.SearchDirectories.htm" />
+  <HelpKINode Title="SearchPaths property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.SearchPaths.htm" />
+  <HelpKINode Title="Settings class">
+    <HelpKINode Title="Settings Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm" />
+    <HelpKINode Title="Settings Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm" />
+    <HelpKINode Title="about Settings class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Settings.Default property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.Default.htm" />
+  <HelpKINode Title="Settings.defaultInstance field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.defaultInstance.htm" />
+  <HelpKINode Title="ShouldExcludeExtensions property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.ShouldExcludeExtensions.htm" />
+  <HelpKINode Title="ShouldSplitPaths property">
+    <HelpKINode Title="ShouldSplitPaths Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.ShouldSplitPaths.htm" />
+    <HelpKINode Title="ShouldSplitPaths Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.ShouldSplitPaths.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ShowMessage method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ShowMessage.htm" />
+  <HelpKINode Title="Size property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.Size.htm" />
+  <HelpKINode Title="SizeBytes property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.SizeBytes.htm" />
+  <HelpKINode Title="SizeHeader field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.SizeHeader.htm" />
+  <HelpKINode Title="SplitPathsIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.SplitPathsIsChecked.htm" />
+  <HelpKINode Title="UIElement_OnMouseLeftButtonDown method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.UIElement_OnMouseLeftButtonDown.htm" />
+  <HelpKINode Title="UserGuide property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.UserGuide.htm" />
+  <HelpKINode Title="Version property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.Version.htm" />
+  <HelpKINode Title="ViewModel class">
+    <HelpKINode Title="ViewModel Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm" />
+    <HelpKINode Title="ViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm" />
+    <HelpKINode Title="about ViewModel class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ViewModel.AboutWindow property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.AboutWindow.htm" />
+  <HelpKINode Title="ViewModel.AddExcludedPath property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.AddExcludedPath.htm" />
+  <HelpKINode Title="ViewModel.AddExtension property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.AddExtension.htm" />
+  <HelpKINode Title="ViewModel.AddSearchPath property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.AddSearchPath.htm" />
+  <HelpKINode Title="ViewModel.CanAddExcludedPath method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanAddExcludedPath.htm" />
+  <HelpKINode Title="ViewModel.CanAddExtension method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanAddExtension.htm" />
+  <HelpKINode Title="ViewModel.CanAddSearchPath method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanAddSearchPath.htm" />
+  <HelpKINode Title="ViewModel.CanCancel method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanCancel.htm" />
+  <HelpKINode Title="ViewModel.Cancel property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.Cancel.htm" />
+  <HelpKINode Title="ViewModel.CanGetFileSizeInfo method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanGetFileSizeInfo.htm" />
+  <HelpKINode Title="ViewModel.CanRemoveExcludedPath method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanRemoveExcludedPath.htm" />
+  <HelpKINode Title="ViewModel.CanRemoveExtension method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanRemoveExtension.htm" />
+  <HelpKINode Title="ViewModel.CanRemoveSearchPath method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanRemoveSearchPath.htm" />
+  <HelpKINode Title="ViewModel.CombinedPathsIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CombinedPathsIsChecked.htm" />
+  <HelpKINode Title="ViewModel.ExcludedPaths property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExcludedPaths.htm" />
+  <HelpKINode Title="ViewModel.ExcludeExtensionsIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExcludeExtensionsIsChecked.htm" />
+  <HelpKINode Title="ViewModel.ExecuteAddExcludedPath method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteAddExcludedPath.htm" />
+  <HelpKINode Title="ViewModel.ExecuteAddExtension method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteAddExtension.htm" />
+  <HelpKINode Title="ViewModel.ExecuteAddSearchPath method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteAddSearchPath.htm" />
+  <HelpKINode Title="ViewModel.ExecuteCancel method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteCancel.htm" />
+  <HelpKINode Title="ViewModel.ExecuteGetFileSizeInfo method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteGetFileSizeInfo.htm" />
+  <HelpKINode Title="ViewModel.ExecuteOpenAboutWindow method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteOpenAboutWindow.htm" />
+  <HelpKINode Title="ViewModel.ExecuteOpenUserGuide method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteOpenUserGuide.htm" />
+  <HelpKINode Title="ViewModel.ExecuteRemoveExcludedPath method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteRemoveExcludedPath.htm" />
+  <HelpKINode Title="ViewModel.ExecuteRemoveExtension method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteRemoveExtension.htm" />
+  <HelpKINode Title="ViewModel.ExecuteRemoveSearchPath method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteRemoveSearchPath.htm" />
+  <HelpKINode Title="ViewModel.Extensions property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.Extensions.htm" />
+  <HelpKINode Title="ViewModel.ExtensionsSelectorIndex property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExtensionsSelectorIndex.htm" />
+  <HelpKINode Title="ViewModel.FileSystemSizeInfoChecker property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.FileSystemSizeInfoChecker.htm" />
+  <HelpKINode Title="ViewModel.GetFileSizeInfo property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.GetFileSizeInfo.htm" />
+  <HelpKINode Title="ViewModel.GetSelectedScope method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.GetSelectedScope.htm" />
+  <HelpKINode Title="ViewModel.HelpFile field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.HelpFile.htm" />
+  <HelpKINode Title="ViewModel.IsBusy property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.IsBusy.htm" />
+  <HelpKINode Title="ViewModel.MaxFileSize property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFileSize.htm" />
+  <HelpKINode Title="ViewModel.MaxFileSizeIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFileSizeIsChecked.htm" />
+  <HelpKINode Title="ViewModel.MaxFolderContents property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFolderContents.htm" />
+  <HelpKINode Title="ViewModel.MaxFolderContentsIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFolderContentsIsChecked.htm" />
+  <HelpKINode Title="ViewModel.MaxFolderSize property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFolderSize.htm" />
+  <HelpKINode Title="ViewModel.MaxFolderSizeIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFolderSizeIsChecked.htm" />
+  <HelpKINode Title="ViewModel.Message property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.Message.htm" />
+  <HelpKINode Title="ViewModel.MessageIsVisible property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MessageIsVisible.htm" />
+  <HelpKINode Title="ViewModel.MessageZIndex property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MessageZIndex.htm" />
+  <HelpKINode Title="ViewModel.MinFileSize property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFileSize.htm" />
+  <HelpKINode Title="ViewModel.MinFileSizeIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFileSizeIsChecked.htm" />
+  <HelpKINode Title="ViewModel.MinFolderContents property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFolderContents.htm" />
+  <HelpKINode Title="ViewModel.MinFolderContentsIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFolderContentsIsChecked.htm" />
+  <HelpKINode Title="ViewModel.MinFolderSize property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFolderSize.htm" />
+  <HelpKINode Title="ViewModel.MinFolderSizeIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFolderSizeIsChecked.htm" />
+  <HelpKINode Title="ViewModel.NotifyPropertyChanged method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.NotifyPropertyChanged.htm" />
+  <HelpKINode Title="ViewModel.OpenAboutWindow property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.OpenAboutWindow.htm" />
+  <HelpKINode Title="ViewModel.OpenUserGuide property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.OpenUserGuide.htm" />
+  <HelpKINode Title="ViewModel.PathDisplayOptionIsChecked method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.PathDisplayOptionIsChecked.htm" />
+  <HelpKINode Title="ViewModel.PropertyChanged event" Url="html/E-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.PropertyChanged.htm" />
+  <HelpKINode Title="ViewModel.RemoveExcludedPath property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.RemoveExcludedPath.htm" />
+  <HelpKINode Title="ViewModel.RemoveExtension property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.RemoveExtension.htm" />
+  <HelpKINode Title="ViewModel.RemoveSearchPath property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.RemoveSearchPath.htm" />
+  <HelpKINode Title="ViewModel.ScopeAllChildrenIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ScopeAllChildrenIsChecked.htm" />
+  <HelpKINode Title="ViewModel.ScopeImmediateChildrenIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ScopeImmediateChildrenIsChecked.htm" />
+  <HelpKINode Title="ViewModel.ScopeIsSelected method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ScopeIsSelected.htm" />
+  <HelpKINode Title="ViewModel.ScopeNoChildrenIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ScopeNoChildrenIsChecked.htm" />
+  <HelpKINode Title="ViewModel.SearchPaths property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.SearchPaths.htm" />
+  <HelpKINode Title="ViewModel.ShowMessage method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ShowMessage.htm" />
+  <HelpKINode Title="ViewModel.SplitPathsIsChecked property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.SplitPathsIsChecked.htm" />
+  <HelpKINode Title="ViewModel.UserGuide property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.UserGuide.htm" />
+  <HelpKINode Title="ViewModel.Version property" Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.Version.htm" />
+  <HelpKINode Title="ViewModel._aboutWindow field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._aboutWindow.htm" />
+  <HelpKINode Title="ViewModel._combinedPathsIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._combinedPathsIsChecked.htm" />
+  <HelpKINode Title="ViewModel._excludeExtensionsIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._excludeExtensionsIsChecked.htm" />
+  <HelpKINode Title="ViewModel._extensionsSelectorIndex field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._extensionsSelectorIndex.htm" />
+  <HelpKINode Title="ViewModel._isBusy field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._isBusy.htm" />
+  <HelpKINode Title="ViewModel._maxFileSize field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFileSize.htm" />
+  <HelpKINode Title="ViewModel._maxFileSizeIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFileSizeIsChecked.htm" />
+  <HelpKINode Title="ViewModel._maxFolderContents field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFolderContents.htm" />
+  <HelpKINode Title="ViewModel._maxFolderContentsIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFolderContentsIsChecked.htm" />
+  <HelpKINode Title="ViewModel._maxFolderSize field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFolderSize.htm" />
+  <HelpKINode Title="ViewModel._maxFolderSizeIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFolderSizeIsChecked.htm" />
+  <HelpKINode Title="ViewModel._message field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._message.htm" />
+  <HelpKINode Title="ViewModel._messageIsVisible field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._messageIsVisible.htm" />
+  <HelpKINode Title="ViewModel._messageZIndex field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._messageZIndex.htm" />
+  <HelpKINode Title="ViewModel._minFileSize field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFileSize.htm" />
+  <HelpKINode Title="ViewModel._minFileSizeIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFileSizeIsChecked.htm" />
+  <HelpKINode Title="ViewModel._minFolderContents field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFolderContents.htm" />
+  <HelpKINode Title="ViewModel._minFolderContentsIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFolderContentsIsChecked.htm" />
+  <HelpKINode Title="ViewModel._minFolderSize field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFolderSize.htm" />
+  <HelpKINode Title="ViewModel._minFolderSizeIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFolderSizeIsChecked.htm" />
+  <HelpKINode Title="ViewModel._scopeAllChildrenIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._scopeAllChildrenIsChecked.htm" />
+  <HelpKINode Title="ViewModel._scopeImmediateChildrenIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._scopeImmediateChildrenIsChecked.htm" />
+  <HelpKINode Title="ViewModel._scopeNoChildrenIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._scopeNoChildrenIsChecked.htm" />
+  <HelpKINode Title="ViewModel._splitPathsIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._splitPathsIsChecked.htm" />
+  <HelpKINode Title="ViewModel._userGuide field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._userGuide.htm" />
+  <HelpKINode Title="WriteAndOpenResults method" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.WriteAndOpenResults.htm" />
+  <HelpKINode Title="_aboutWindow field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._aboutWindow.htm" />
+  <HelpKINode Title="_combinedPathsIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._combinedPathsIsChecked.htm" />
+  <HelpKINode Title="_excludeExtensionsIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._excludeExtensionsIsChecked.htm" />
+  <HelpKINode Title="_extensionsSelectorIndex field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._extensionsSelectorIndex.htm" />
+  <HelpKINode Title="_isBusy field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._isBusy.htm" />
+  <HelpKINode Title="_maxFileSize field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFileSize.htm" />
+  <HelpKINode Title="_maxFileSizeIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFileSizeIsChecked.htm" />
+  <HelpKINode Title="_maxFolderContents field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFolderContents.htm" />
+  <HelpKINode Title="_maxFolderContentsIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFolderContentsIsChecked.htm" />
+  <HelpKINode Title="_maxFolderSize field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFolderSize.htm" />
+  <HelpKINode Title="_maxFolderSizeIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFolderSizeIsChecked.htm" />
+  <HelpKINode Title="_message field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._message.htm" />
+  <HelpKINode Title="_messageIsVisible field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._messageIsVisible.htm" />
+  <HelpKINode Title="_messageZIndex field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._messageZIndex.htm" />
+  <HelpKINode Title="_minFileSize field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFileSize.htm" />
+  <HelpKINode Title="_minFileSizeIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFileSizeIsChecked.htm" />
+  <HelpKINode Title="_minFolderContents field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFolderContents.htm" />
+  <HelpKINode Title="_minFolderContentsIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFolderContentsIsChecked.htm" />
+  <HelpKINode Title="_minFolderSize field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFolderSize.htm" />
+  <HelpKINode Title="_minFolderSizeIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFolderSizeIsChecked.htm" />
+  <HelpKINode Title="_scopeAllChildrenIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._scopeAllChildrenIsChecked.htm" />
+  <HelpKINode Title="_scopeImmediateChildrenIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._scopeImmediateChildrenIsChecked.htm" />
+  <HelpKINode Title="_scopeNoChildrenIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._scopeNoChildrenIsChecked.htm" />
+  <HelpKINode Title="_splitPathsIsChecked field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._splitPathsIsChecked.htm" />
+  <HelpKINode Title="_userGuide field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._userGuide.htm" />
+</HelpKI>

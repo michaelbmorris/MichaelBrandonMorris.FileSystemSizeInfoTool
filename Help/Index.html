@@ -1,0 +1,786 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<title>MichaelBrandonMorris.FileSystemSizeInfoTool - Table of Content</title>
+<link rel="stylesheet" href="TOC.css">
+<link rel="shortcut icon" href="favicon.ico"/>
+<script type="text/javascript" src="TOC.js"></script>
+</head>
+
+<body onload="javascript: Initialize('.aspx');" onresize="javascript: ResizeTree();">
+<form id="IndexForm" runat="server">
+
+<div id="TOCDiv" class="TOCDiv">
+
+<div id="divSearchOpts" class="SearchOpts" style="height: 90px; display: none;">
+	<img class="TOCLink" onclick="javascript: ShowHideSearch(false);"
+		src="Close.png" height="24" width="24" alt="Hide Search" title="Hide Search" style="float: right;"/>
+	<span class="Title">Keyword(s) to search:</span>
+	<input id="txtSearchText" type="text" style="width: 100%;" 
+		onkeypress="javascript: return OnSearchTextKeyPress(event);" /><br />
+	<input id="chkSortByTitle" type="checkbox" /><label for="chkSortByTitle">&nbsp;Sort results by title</label>
+	<input type="button" value="Search" onclick="javascript: return PerformSearch();" style="float: right;" />
+</div>
+
+<div id="divIndexOpts" class="IndexOpts" style="height: 28px; display: none;">
+	<img class="TOCLink" onclick="javascript: ShowHideIndex(false);"
+		src="Close.png" height="24" width="24" alt="Hide Keyword Index" title="Hide Keyword Index" style="float: right;"/>
+	<span class="Title">Keyword Index</span>
+</div>
+
+<div id="divNavOpts" class="NavOpts" style="height: 28px;">
+    <img class="TOCLink" onclick="javascript: SyncTOC();" src="SyncTOC.png"
+        height="24" width="24" alt="Sync to TOC" title="Sync to TOC" />
+    <img class="TOCLink" onclick="javascript: ExpandOrCollapseAll(true);"
+        src="ExpandAll.png" height="24" width="24" alt="Expand all" title="Expand all" />
+    <img class="TOCLink" onclick="javascript: ExpandOrCollapseAll(false);"
+        src="CollapseAll.png" height="24" width="24" alt="Collapse all" title="Collapse all" />
+    <img class="TOCLink" onclick="javascript: ShowDirectLink();"
+        src="Link.png" height="24" width="24" alt="Get direct link to the displayed topic" title="Get direct link to the displayed topic" />
+    <a href="#" onclick="javascript: TopicContent.history.go(-1); return false;">
+		<img class="TOCLink" style="float: right;" 
+        src="Back.png" height="24" width="24" alt="Previous page" title="Previous page" /></a>
+</div>
+
+<div class="Tree" id="divSearchResults" style="display: none;"
+    onselectstart="javascript: return false;">
+</div>
+
+<div class="Tree" id="divIndexResults" style="display: none;"
+    onselectstart="javascript: return false;">
+</div>
+
+<div class="Tree" id="divTree" onselectstart="javascript: return false;">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/N-MichaelBrandonMorris.FileSystemSizeInfoTool.htm" target="TopicContent">MichaelBrandonMorris.FileSystemSizeInfoTool Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.htm" target="TopicContent">AboutWindow Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.htm" target="TopicContent">AboutWindow Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.-ctor.htm" target="TopicContent">AboutWindow Constructor </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.htm" target="TopicContent">AboutWindow Methods</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.htm" target="TopicContent">AboutWindow Properties</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Events.T-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.htm" target="TopicContent">AboutWindow Events</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.App.htm" target="TopicContent">App Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.App.htm" target="TopicContent">App Methods</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.App.htm" target="TopicContent">App Properties</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Events.T-MichaelBrandonMorris.FileSystemSizeInfoTool.App.htm" target="TopicContent">App Events</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.htm" target="TopicContent">FileSystemSizeInfo Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.htm" target="TopicContent">FileSystemSizeInfo Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Overload-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.-ctor.htm" target="TopicContent">FileSystemSizeInfo Constructor </a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.-ctor.htm" target="TopicContent">FileSystemSizeInfo Constructor (FileInfo)</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.-ctor_1.htm" target="TopicContent">FileSystemSizeInfo Constructor (DirectoryInfo)</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.htm" target="TopicContent">FileSystemSizeInfo Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.BytesInMegaByte.htm" target="TopicContent">BytesInMegaByte Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.htm" target="TopicContent">FileSystemSizeInfo Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.GetContentsAndSize.htm" target="TopicContent">GetContentsAndSize Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.htm" target="TopicContent">FileSystemSizeInfo Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.ContentsCount.htm" target="TopicContent">ContentsCount Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.Extension.htm" target="TopicContent">Extension Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.FilesCount.htm" target="TopicContent">FilesCount Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.FileSystemInfo.htm" target="TopicContent">FileSystemInfo Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.FoldersCount.htm" target="TopicContent">FoldersCount Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.FullName.htm" target="TopicContent">FullName Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.FullNameSplitPath.htm" target="TopicContent">FullNameSplitPath Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.Owner.htm" target="TopicContent">Owner Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.PathLevels.htm" target="TopicContent">PathLevels Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.Size.htm" target="TopicContent">Size Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.SizeBytes.htm" target="TopicContent">SizeBytes Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.htm" target="TopicContent">FileSystemSizeInfoChecker Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.htm" target="TopicContent">FileSystemSizeInfoChecker Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.-ctor.htm" target="TopicContent">FileSystemSizeInfoChecker Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.htm" target="TopicContent">FileSystemSizeInfoChecker Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.CsvExtension.htm" target="TopicContent">CsvExtension Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.OutputPath.htm" target="TopicContent">OutputPath Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.ResultsFileName.htm" target="TopicContent">ResultsFileName Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.htm" target="TopicContent">FileSystemSizeInfoChecker Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.Cancel.htm" target="TopicContent">Cancel Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.Execute.htm" target="TopicContent">Execute Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.WriteAndOpenResults.htm" target="TopicContent">WriteAndOpenResults Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.htm" target="TopicContent">FileSystemSizeInfoChecker Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.CancellationToken.htm" target="TopicContent">CancellationToken Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.CancellationTokenSource.htm" target="TopicContent">CancellationTokenSource Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.FileSystemSizeInfoGetter.htm" target="TopicContent">FileSystemSizeInfoGetter Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.Results.htm" target="TopicContent">Results Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.ShouldSplitPaths.htm" target="TopicContent">ShouldSplitPaths Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.htm" target="TopicContent">FileSystemSizeInfoFormatter Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.htm" target="TopicContent">FileSystemSizeInfoFormatter Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.-ctor.htm" target="TopicContent">FileSystemSizeInfoFormatter Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.htm" target="TopicContent">FileSystemSizeInfoFormatter Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.FileContentsHeader.htm" target="TopicContent">FileContentsHeader Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.FileExtensionHeader.htm" target="TopicContent">FileExtensionHeader Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.FolderContentsHeader.htm" target="TopicContent">FolderContentsHeader Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.LevelHeader.htm" target="TopicContent">LevelHeader Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.MaxResults.htm" target="TopicContent">MaxResults Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.OwnerHeader.htm" target="TopicContent">OwnerHeader Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.PathHeader.htm" target="TopicContent">PathHeader Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.ResultNumberHeader.htm" target="TopicContent">ResultNumberHeader Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.SizeHeader.htm" target="TopicContent">SizeHeader Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.htm" target="TopicContent">FileSystemSizeInfoFormatter Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.GetFormattedFileSystemSizeInfos.htm" target="TopicContent">GetFormattedFileSystemSizeInfos Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.htm" target="TopicContent">FileSystemSizeInfoFormatter Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.CancellationToken.htm" target="TopicContent">CancellationToken Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.FileSystemSizeInfos.htm" target="TopicContent">FileSystemSizeInfos Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.MaxPathLevels.htm" target="TopicContent">MaxPathLevels Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.ShouldSplitPaths.htm" target="TopicContent">ShouldSplitPaths Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.htm" target="TopicContent">FileSystemSizeInfoGetter Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.htm" target="TopicContent">FileSystemSizeInfoGetter Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.-ctor.htm" target="TopicContent">FileSystemSizeInfoGetter Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.htm" target="TopicContent">FileSystemSizeInfoGetter Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.BytesInMegaByte.htm" target="TopicContent">BytesInMegaByte Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.RootLevel.htm" target="TopicContent">RootLevel Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.htm" target="TopicContent">FileSystemSizeInfoGetter Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.GetFileSystemInfos.htm" target="TopicContent">GetFileSystemInfos Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.GetFileSystemSizeInfos.htm" target="TopicContent">GetFileSystemSizeInfos Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.htm" target="TopicContent">FileSystemSizeInfoGetter Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.CancellationToken.htm" target="TopicContent">CancellationToken Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.ExcludedPaths.htm" target="TopicContent">ExcludedPaths Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.Extensions.htm" target="TopicContent">Extensions Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.FileSystemSizeInfos.htm" target="TopicContent">FileSystemSizeInfos Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MaxFileSize.htm" target="TopicContent">MaxFileSize Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MaxFolderContents.htm" target="TopicContent">MaxFolderContents Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MaxFolderSize.htm" target="TopicContent">MaxFolderSize Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MaxPathLevels.htm" target="TopicContent">MaxPathLevels Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MinFileSize.htm" target="TopicContent">MinFileSize Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MinFolderContents.htm" target="TopicContent">MinFolderContents Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MinFolderSize.htm" target="TopicContent">MinFolderSize Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.Scope.htm" target="TopicContent">Scope Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.SearchDirectories.htm" target="TopicContent">SearchDirectories Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.ShouldExcludeExtensions.htm" target="TopicContent">ShouldExcludeExtensions Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.htm" target="TopicContent">MainWindow Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.htm" target="TopicContent">MainWindow Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.-ctor.htm" target="TopicContent">MainWindow Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.htm" target="TopicContent">MainWindow Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.UIElement_OnMouseLeftButtonDown.htm" target="TopicContent">UIElement_OnMouseLeftButtonDown Method </a>
+</div>
+</div>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.htm" target="TopicContent">MainWindow Properties</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Events.T-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.htm" target="TopicContent">MainWindow Events</a>
+</div>
+</div>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.Scope.htm" target="TopicContent">Scope Enumeration</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm" target="TopicContent">ViewModel Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm" target="TopicContent">ViewModel Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm" target="TopicContent">ViewModel Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._aboutWindow.htm" target="TopicContent">_aboutWindow Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._combinedPathsIsChecked.htm" target="TopicContent">_combinedPathsIsChecked Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._excludeExtensionsIsChecked.htm" target="TopicContent">_excludeExtensionsIsChecked Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._extensionsSelectorIndex.htm" target="TopicContent">_extensionsSelectorIndex Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._isBusy.htm" target="TopicContent">_isBusy Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFileSize.htm" target="TopicContent">_maxFileSize Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFileSizeIsChecked.htm" target="TopicContent">_maxFileSizeIsChecked Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFolderContents.htm" target="TopicContent">_maxFolderContents Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFolderContentsIsChecked.htm" target="TopicContent">_maxFolderContentsIsChecked Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFolderSize.htm" target="TopicContent">_maxFolderSize Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFolderSizeIsChecked.htm" target="TopicContent">_maxFolderSizeIsChecked Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._message.htm" target="TopicContent">_message Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._messageIsVisible.htm" target="TopicContent">_messageIsVisible Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._messageZIndex.htm" target="TopicContent">_messageZIndex Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFileSize.htm" target="TopicContent">_minFileSize Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFileSizeIsChecked.htm" target="TopicContent">_minFileSizeIsChecked Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFolderContents.htm" target="TopicContent">_minFolderContents Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFolderContentsIsChecked.htm" target="TopicContent">_minFolderContentsIsChecked Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFolderSize.htm" target="TopicContent">_minFolderSize Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFolderSizeIsChecked.htm" target="TopicContent">_minFolderSizeIsChecked Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._scopeAllChildrenIsChecked.htm" target="TopicContent">_scopeAllChildrenIsChecked Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._scopeImmediateChildrenIsChecked.htm" target="TopicContent">_scopeImmediateChildrenIsChecked Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._scopeNoChildrenIsChecked.htm" target="TopicContent">_scopeNoChildrenIsChecked Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._splitPathsIsChecked.htm" target="TopicContent">_splitPathsIsChecked Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._userGuide.htm" target="TopicContent">_userGuide Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.HelpFile.htm" target="TopicContent">HelpFile Field</a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm" target="TopicContent">ViewModel Methods</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanAddExcludedPath.htm" target="TopicContent">CanAddExcludedPath Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanAddExtension.htm" target="TopicContent">CanAddExtension Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanAddSearchPath.htm" target="TopicContent">CanAddSearchPath Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanCancel.htm" target="TopicContent">CanCancel Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanGetFileSizeInfo.htm" target="TopicContent">CanGetFileSizeInfo Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanRemoveExcludedPath.htm" target="TopicContent">CanRemoveExcludedPath Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanRemoveExtension.htm" target="TopicContent">CanRemoveExtension Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanRemoveSearchPath.htm" target="TopicContent">CanRemoveSearchPath Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteAddExcludedPath.htm" target="TopicContent">ExecuteAddExcludedPath Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteAddExtension.htm" target="TopicContent">ExecuteAddExtension Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteAddSearchPath.htm" target="TopicContent">ExecuteAddSearchPath Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteCancel.htm" target="TopicContent">ExecuteCancel Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteGetFileSizeInfo.htm" target="TopicContent">ExecuteGetFileSizeInfo Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteOpenAboutWindow.htm" target="TopicContent">ExecuteOpenAboutWindow Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteOpenUserGuide.htm" target="TopicContent">ExecuteOpenUserGuide Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteRemoveExcludedPath.htm" target="TopicContent">ExecuteRemoveExcludedPath Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteRemoveExtension.htm" target="TopicContent">ExecuteRemoveExtension Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteRemoveSearchPath.htm" target="TopicContent">ExecuteRemoveSearchPath Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.GetSelectedScope.htm" target="TopicContent">GetSelectedScope Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.NotifyPropertyChanged.htm" target="TopicContent">NotifyPropertyChanged Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.PathDisplayOptionIsChecked.htm" target="TopicContent">PathDisplayOptionIsChecked Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ScopeIsSelected.htm" target="TopicContent">ScopeIsSelected Method </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ShowMessage.htm" target="TopicContent">ShowMessage Method </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm" target="TopicContent">ViewModel Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.AboutWindow.htm" target="TopicContent">AboutWindow Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.AddExcludedPath.htm" target="TopicContent">AddExcludedPath Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.AddExtension.htm" target="TopicContent">AddExtension Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.AddSearchPath.htm" target="TopicContent">AddSearchPath Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.Cancel.htm" target="TopicContent">Cancel Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CombinedPathsIsChecked.htm" target="TopicContent">CombinedPathsIsChecked Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExcludedPaths.htm" target="TopicContent">ExcludedPaths Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExcludeExtensionsIsChecked.htm" target="TopicContent">ExcludeExtensionsIsChecked Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.Extensions.htm" target="TopicContent">Extensions Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExtensionsSelectorIndex.htm" target="TopicContent">ExtensionsSelectorIndex Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.FileSystemSizeInfoChecker.htm" target="TopicContent">FileSystemSizeInfoChecker Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.GetFileSizeInfo.htm" target="TopicContent">GetFileSizeInfo Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.IsBusy.htm" target="TopicContent">IsBusy Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFileSize.htm" target="TopicContent">MaxFileSize Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFileSizeIsChecked.htm" target="TopicContent">MaxFileSizeIsChecked Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFolderContents.htm" target="TopicContent">MaxFolderContents Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFolderContentsIsChecked.htm" target="TopicContent">MaxFolderContentsIsChecked Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFolderSize.htm" target="TopicContent">MaxFolderSize Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFolderSizeIsChecked.htm" target="TopicContent">MaxFolderSizeIsChecked Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.Message.htm" target="TopicContent">Message Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MessageIsVisible.htm" target="TopicContent">MessageIsVisible Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MessageZIndex.htm" target="TopicContent">MessageZIndex Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFileSize.htm" target="TopicContent">MinFileSize Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFileSizeIsChecked.htm" target="TopicContent">MinFileSizeIsChecked Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFolderContents.htm" target="TopicContent">MinFolderContents Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFolderContentsIsChecked.htm" target="TopicContent">MinFolderContentsIsChecked Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFolderSize.htm" target="TopicContent">MinFolderSize Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFolderSizeIsChecked.htm" target="TopicContent">MinFolderSizeIsChecked Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.OpenAboutWindow.htm" target="TopicContent">OpenAboutWindow Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.OpenUserGuide.htm" target="TopicContent">OpenUserGuide Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.RemoveExcludedPath.htm" target="TopicContent">RemoveExcludedPath Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.RemoveExtension.htm" target="TopicContent">RemoveExtension Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.RemoveSearchPath.htm" target="TopicContent">RemoveSearchPath Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ScopeAllChildrenIsChecked.htm" target="TopicContent">ScopeAllChildrenIsChecked Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ScopeImmediateChildrenIsChecked.htm" target="TopicContent">ScopeImmediateChildrenIsChecked Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ScopeNoChildrenIsChecked.htm" target="TopicContent">ScopeNoChildrenIsChecked Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.SearchPaths.htm" target="TopicContent">SearchPaths Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.SplitPathsIsChecked.htm" target="TopicContent">SplitPathsIsChecked Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.UserGuide.htm" target="TopicContent">UserGuide Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.Version.htm" target="TopicContent">Version Property </a>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Events.T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm" target="TopicContent">ViewModel Events</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/E-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.PropertyChanged.htm" target="TopicContent">PropertyChanged Event</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/N-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.htm" target="TopicContent">MichaelBrandonMorris.FileSystemSizeInfoTool.Properties Namespace</a>
+<div class="Hidden">
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.htm" target="TopicContent">Resources Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.htm" target="TopicContent">Resources Members</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.-ctor.htm" target="TopicContent">Resources Constructor </a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.htm" target="TopicContent">Resources Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.resourceCulture.htm" target="TopicContent">resourceCulture Field</a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.resourceMan.htm" target="TopicContent">resourceMan Field</a>
+</div>
+</div>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.htm" target="TopicContent">Resources Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.htm" target="TopicContent">Resources Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.Culture.htm" target="TopicContent">Culture Property </a>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.ResourceManager.htm" target="TopicContent">ResourceManager Property </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm" target="TopicContent">Settings Class</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm" target="TopicContent">Settings Members</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm" target="TopicContent">Settings Fields</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.defaultInstance.htm" target="TopicContent">defaultInstance Field</a>
+</div>
+</div>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm" target="TopicContent">Settings Methods</a>
+</div>
+<div class="TreeNode">
+<img class="TreeNodeImg" onclick="javascript: Toggle(this);" src="Collapsed.png"/><a class="UnselectedNode" onclick="javascript: return Expand(this);" href="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm" target="TopicContent">Settings Properties</a>
+<div class="Hidden">
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.Default.htm" target="TopicContent">Default Property </a>
+</div>
+</div>
+</div>
+<div class="TreeItem">
+<img src="Item.gif"/><a class="UnselectedNode" onclick="javascript: return SelectNode(this);" href="html/Events.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm" target="TopicContent">Settings Events</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div id="TOCSizer" class="TOCSizer" onmousedown="OnMouseDown(event)" onselectstart="javascript: return false;"></div>
+
+<iframe id="TopicContent" name="TopicContent" class="TopicContent" src="html/n-michaelbrandonmorris.filesystemsizeinfotool.htm">
+This page uses an IFRAME but your browser does not support it.
+</iframe>
+
+</form>
+
+</body>
+
+</html>

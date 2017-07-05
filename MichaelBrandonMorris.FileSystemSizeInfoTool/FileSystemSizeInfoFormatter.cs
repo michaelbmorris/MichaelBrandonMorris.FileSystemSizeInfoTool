@@ -6,18 +6,81 @@ using MichaelBrandonMorris.Extensions.OtherExtensions;
 
 namespace MichaelBrandonMorris.FileSystemSizeInfoTool
 {
+    /// <summary>
+    ///     Class FileSystemSizeInfoFormatter.
+    /// </summary>
+    /// TODO Edit XML Comment Template for FileSystemSizeInfoFormatter
     internal class FileSystemSizeInfoFormatter
     {
+        /// <summary>
+        ///     The file contents header
+        /// </summary>
+        /// TODO Edit XML Comment Template for FileContentsHeader
         private const string FileContentsHeader = "# Files";
+
+        /// <summary>
+        ///     The file extension header
+        /// </summary>
+        /// TODO Edit XML Comment Template for FileExtensionHeader
         private const string FileExtensionHeader = "File Extension";
+
+        /// <summary>
+        ///     The folder contents header
+        /// </summary>
+        /// TODO Edit XML Comment Template for FolderContentsHeader
         private const string FolderContentsHeader = "# Folders";
+
+        /// <summary>
+        ///     The level header
+        /// </summary>
+        /// TODO Edit XML Comment Template for LevelHeader
         private const string LevelHeader = "Level";
+
+        /// <summary>
+        ///     The maximum results
+        /// </summary>
+        /// TODO Edit XML Comment Template for MaxResults
         private const int MaxResults = 1048574;
+
+        /// <summary>
+        ///     The owner header
+        /// </summary>
+        /// TODO Edit XML Comment Template for OwnerHeader
         private const string OwnerHeader = "Owner";
+
+        /// <summary>
+        ///     The path header
+        /// </summary>
+        /// TODO Edit XML Comment Template for PathHeader
         private const string PathHeader = "Path";
+
+        /// <summary>
+        ///     The result number header
+        /// </summary>
+        /// TODO Edit XML Comment Template for ResultNumberHeader
         private const string ResultNumberHeader = "#";
+
+        /// <summary>
+        ///     The size header
+        /// </summary>
+        /// TODO Edit XML Comment Template for SizeHeader
         private const string SizeHeader = "Size (MB)";
 
+        /// <summary>
+        ///     Initializes a new instance of the
+        ///     <see cref="FileSystemSizeInfoFormatter" /> class.
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token.</param>
+        /// <param name="fileSystemSizeInfos">
+        ///     The file system size
+        ///     infos.
+        /// </param>
+        /// <param name="shouldSplitPaths">
+        ///     if set to <c>true</c>
+        ///     [should split paths].
+        /// </param>
+        /// <param name="maxPathLevels">The maximum path levels.</param>
+        /// TODO Edit XML Comment Template for #ctor
         internal FileSystemSizeInfoFormatter(
             CancellationToken cancellationToken,
             IEnumerable<FileSystemSizeInfo> fileSystemSizeInfos,
@@ -30,26 +93,54 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
             MaxPathLevels = maxPathLevels;
         }
 
+        /// <summary>
+        ///     Gets the cancellation token.
+        /// </summary>
+        /// <value>The cancellation token.</value>
+        /// TODO Edit XML Comment Template for CancellationToken
         private CancellationToken CancellationToken
         {
             get;
         }
 
+        /// <summary>
+        ///     Gets the file system size infos.
+        /// </summary>
+        /// <value>The file system size infos.</value>
+        /// TODO Edit XML Comment Template for FileSystemSizeInfos
         private IEnumerable<FileSystemSizeInfo> FileSystemSizeInfos
         {
             get;
         }
 
+        /// <summary>
+        ///     Gets the maximum path levels.
+        /// </summary>
+        /// <value>The maximum path levels.</value>
+        /// TODO Edit XML Comment Template for MaxPathLevels
         private int? MaxPathLevels
         {
             get;
         }
 
+        /// <summary>
+        ///     Gets a value indicating whether [should split paths].
+        /// </summary>
+        /// <value>
+        ///     <c>true</c> if [should split paths]; otherwise,
+        ///     <c>false</c>.
+        /// </value>
+        /// TODO Edit XML Comment Template for ShouldSplitPaths
         private bool ShouldSplitPaths
         {
             get;
         }
 
+        /// <summary>
+        ///     Gets the formatted file system size infos.
+        /// </summary>
+        /// <returns>System.String.</returns>
+        /// TODO Edit XML Comment Template for GetFormattedFileSystemSizeInfos
         internal string GetFormattedFileSystemSizeInfos()
         {
             var formattedFileSystemSizeInfos = new StringBuilder();
@@ -88,8 +179,7 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
                     break;
                 }
 
-                formattedFileSystemSizeInfos.AppendCsv(
-                    resultsCount.ToString());
+                formattedFileSystemSizeInfos.AppendCsv(resultsCount.ToString());
 
                 if (ShouldSplitPaths && MaxPathLevels != null)
                 {
@@ -122,8 +212,8 @@ namespace MichaelBrandonMorris.FileSystemSizeInfoTool
                     fileSystemSizeInfo.Size.ToString(
                         CultureInfo.InvariantCulture));
 
-                formattedFileSystemSizeInfos.AppendCsv(
-                    fileSystemSizeInfo.Owner);
+                formattedFileSystemSizeInfos
+                    .AppendCsv(fileSystemSizeInfo.Owner);
 
                 formattedFileSystemSizeInfos.AppendLine();
                 resultsCount++;

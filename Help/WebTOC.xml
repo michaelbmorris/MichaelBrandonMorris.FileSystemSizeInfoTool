@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="8f89ddf4-79c1-4149-a446-8a0201474858" Title="MichaelBrandonMorris.FileSystemSizeInfoTool Namespace" Url="html/N-MichaelBrandonMorris.FileSystemSizeInfoTool.htm">
+    <HelpTOCNode Id="4e573c0b-7e80-4ac2-a0ff-4a84a6dca936" Title="AboutWindow Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.htm">
+      <HelpTOCNode Title="AboutWindow Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.htm" />
+      <HelpTOCNode Title="AboutWindow Constructor " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.-ctor.htm" />
+      <HelpTOCNode Title="AboutWindow Methods" Url="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.htm" />
+      <HelpTOCNode Title="AboutWindow Properties" Url="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.htm" />
+      <HelpTOCNode Title="AboutWindow Events" Url="html/Events.T-MichaelBrandonMorris.FileSystemSizeInfoTool.AboutWindow.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="fd1bd069-3a31-4480-bb9c-7739dc512349" Title="App Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.App.htm">
+      <HelpTOCNode Title="App Methods" Url="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.App.htm" />
+      <HelpTOCNode Title="App Properties" Url="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.App.htm" />
+      <HelpTOCNode Title="App Events" Url="html/Events.T-MichaelBrandonMorris.FileSystemSizeInfoTool.App.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="5bc8cd8e-2e6a-4c06-949b-08886434c541" Title="FileSystemSizeInfo Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.htm">
+      <HelpTOCNode Title="FileSystemSizeInfo Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.htm" />
+      <HelpTOCNode Id="440ac165-6cd4-4bed-a772-2692ff690948" Title="FileSystemSizeInfo Constructor " Url="html/Overload-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.-ctor.htm">
+        <HelpTOCNode Title="FileSystemSizeInfo Constructor (FileInfo)" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.-ctor.htm" />
+        <HelpTOCNode Title="FileSystemSizeInfo Constructor (DirectoryInfo)" Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.-ctor_1.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="ffd9ca33-d253-4fe1-a16c-70ae88df9fb2" Title="FileSystemSizeInfo Fields" Url="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.htm">
+        <HelpTOCNode Title="BytesInMegaByte Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.BytesInMegaByte.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="00413518-5960-4d36-b10f-0d063c0e980e" Title="FileSystemSizeInfo Methods" Url="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.htm">
+        <HelpTOCNode Title="GetContentsAndSize Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.GetContentsAndSize.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b2fc8905-7c19-49f3-ba97-784a790b28ee" Title="FileSystemSizeInfo Properties" Url="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.htm">
+        <HelpTOCNode Title="ContentsCount Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.ContentsCount.htm" />
+        <HelpTOCNode Title="Extension Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.Extension.htm" />
+        <HelpTOCNode Title="FilesCount Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.FilesCount.htm" />
+        <HelpTOCNode Title="FileSystemInfo Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.FileSystemInfo.htm" />
+        <HelpTOCNode Title="FoldersCount Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.FoldersCount.htm" />
+        <HelpTOCNode Title="FullName Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.FullName.htm" />
+        <HelpTOCNode Title="FullNameSplitPath Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.FullNameSplitPath.htm" />
+        <HelpTOCNode Title="Owner Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.Owner.htm" />
+        <HelpTOCNode Title="PathLevels Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.PathLevels.htm" />
+        <HelpTOCNode Title="Size Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.Size.htm" />
+        <HelpTOCNode Title="SizeBytes Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfo.SizeBytes.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2a1ff8ec-0779-4ea5-8750-162d42e7a6af" Title="FileSystemSizeInfoChecker Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.htm">
+      <HelpTOCNode Title="FileSystemSizeInfoChecker Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.htm" />
+      <HelpTOCNode Title="FileSystemSizeInfoChecker Constructor " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.-ctor.htm" />
+      <HelpTOCNode Id="b5ae43e9-4e89-4239-a127-81375f91c453" Title="FileSystemSizeInfoChecker Fields" Url="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.htm">
+        <HelpTOCNode Title="CsvExtension Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.CsvExtension.htm" />
+        <HelpTOCNode Title="OutputPath Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.OutputPath.htm" />
+        <HelpTOCNode Title="ResultsFileName Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.ResultsFileName.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="790e681c-0aff-45ad-8726-18a66677bbfb" Title="FileSystemSizeInfoChecker Methods" Url="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.htm">
+        <HelpTOCNode Title="Cancel Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.Cancel.htm" />
+        <HelpTOCNode Title="Execute Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.Execute.htm" />
+        <HelpTOCNode Title="WriteAndOpenResults Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.WriteAndOpenResults.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c0067d75-87c3-471d-8112-f1cc9224a9af" Title="FileSystemSizeInfoChecker Properties" Url="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.htm">
+        <HelpTOCNode Title="CancellationToken Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.CancellationToken.htm" />
+        <HelpTOCNode Title="CancellationTokenSource Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.CancellationTokenSource.htm" />
+        <HelpTOCNode Title="FileSystemSizeInfoGetter Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.FileSystemSizeInfoGetter.htm" />
+        <HelpTOCNode Title="Results Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.Results.htm" />
+        <HelpTOCNode Title="ShouldSplitPaths Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoChecker.ShouldSplitPaths.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="df87c5af-ebc3-4321-b2de-e114149a2be5" Title="FileSystemSizeInfoFormatter Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.htm">
+      <HelpTOCNode Title="FileSystemSizeInfoFormatter Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.htm" />
+      <HelpTOCNode Title="FileSystemSizeInfoFormatter Constructor " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.-ctor.htm" />
+      <HelpTOCNode Id="f9f14d90-4648-45fd-bf1f-09be1c79710d" Title="FileSystemSizeInfoFormatter Fields" Url="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.htm">
+        <HelpTOCNode Title="FileContentsHeader Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.FileContentsHeader.htm" />
+        <HelpTOCNode Title="FileExtensionHeader Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.FileExtensionHeader.htm" />
+        <HelpTOCNode Title="FolderContentsHeader Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.FolderContentsHeader.htm" />
+        <HelpTOCNode Title="LevelHeader Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.LevelHeader.htm" />
+        <HelpTOCNode Title="MaxResults Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.MaxResults.htm" />
+        <HelpTOCNode Title="OwnerHeader Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.OwnerHeader.htm" />
+        <HelpTOCNode Title="PathHeader Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.PathHeader.htm" />
+        <HelpTOCNode Title="ResultNumberHeader Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.ResultNumberHeader.htm" />
+        <HelpTOCNode Title="SizeHeader Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.SizeHeader.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5fbf8540-ce61-4989-a28f-3c3e13baec68" Title="FileSystemSizeInfoFormatter Methods" Url="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.htm">
+        <HelpTOCNode Title="GetFormattedFileSystemSizeInfos Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.GetFormattedFileSystemSizeInfos.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="e367e306-783d-4243-a850-b1303975df2a" Title="FileSystemSizeInfoFormatter Properties" Url="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.htm">
+        <HelpTOCNode Title="CancellationToken Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.CancellationToken.htm" />
+        <HelpTOCNode Title="FileSystemSizeInfos Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.FileSystemSizeInfos.htm" />
+        <HelpTOCNode Title="MaxPathLevels Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.MaxPathLevels.htm" />
+        <HelpTOCNode Title="ShouldSplitPaths Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoFormatter.ShouldSplitPaths.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5845cd0c-cf26-4e5d-8fa4-1626989593fb" Title="FileSystemSizeInfoGetter Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.htm">
+      <HelpTOCNode Title="FileSystemSizeInfoGetter Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.htm" />
+      <HelpTOCNode Title="FileSystemSizeInfoGetter Constructor " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.-ctor.htm" />
+      <HelpTOCNode Id="c4b654d7-769e-44d1-8903-c933ce00bd02" Title="FileSystemSizeInfoGetter Fields" Url="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.htm">
+        <HelpTOCNode Title="BytesInMegaByte Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.BytesInMegaByte.htm" />
+        <HelpTOCNode Title="RootLevel Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.RootLevel.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2873530b-df21-4556-a710-60521d68be78" Title="FileSystemSizeInfoGetter Methods" Url="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.htm">
+        <HelpTOCNode Title="GetFileSystemInfos Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.GetFileSystemInfos.htm" />
+        <HelpTOCNode Title="GetFileSystemSizeInfos Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.GetFileSystemSizeInfos.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="df5385f8-6307-4911-bcfa-3049b85db9de" Title="FileSystemSizeInfoGetter Properties" Url="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.htm">
+        <HelpTOCNode Title="CancellationToken Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.CancellationToken.htm" />
+        <HelpTOCNode Title="ExcludedPaths Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.ExcludedPaths.htm" />
+        <HelpTOCNode Title="Extensions Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.Extensions.htm" />
+        <HelpTOCNode Title="FileSystemSizeInfos Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.FileSystemSizeInfos.htm" />
+        <HelpTOCNode Title="MaxFileSize Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MaxFileSize.htm" />
+        <HelpTOCNode Title="MaxFolderContents Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MaxFolderContents.htm" />
+        <HelpTOCNode Title="MaxFolderSize Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MaxFolderSize.htm" />
+        <HelpTOCNode Title="MaxPathLevels Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MaxPathLevels.htm" />
+        <HelpTOCNode Title="MinFileSize Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MinFileSize.htm" />
+        <HelpTOCNode Title="MinFolderContents Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MinFolderContents.htm" />
+        <HelpTOCNode Title="MinFolderSize Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.MinFolderSize.htm" />
+        <HelpTOCNode Title="Scope Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.Scope.htm" />
+        <HelpTOCNode Title="SearchDirectories Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.SearchDirectories.htm" />
+        <HelpTOCNode Title="ShouldExcludeExtensions Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.FileSystemSizeInfoGetter.ShouldExcludeExtensions.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f932c37c-416a-4a02-b5f7-4324e23a8b33" Title="MainWindow Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.htm">
+      <HelpTOCNode Title="MainWindow Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.htm" />
+      <HelpTOCNode Title="MainWindow Constructor " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.-ctor.htm" />
+      <HelpTOCNode Id="c7a20879-5317-4623-b94d-f2ef8ca12f62" Title="MainWindow Methods" Url="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.htm">
+        <HelpTOCNode Title="UIElement_OnMouseLeftButtonDown Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.UIElement_OnMouseLeftButtonDown.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MainWindow Properties" Url="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.htm" />
+      <HelpTOCNode Title="MainWindow Events" Url="html/Events.T-MichaelBrandonMorris.FileSystemSizeInfoTool.MainWindow.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="Scope Enumeration" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.Scope.htm" />
+    <HelpTOCNode Id="fcca8136-4ba4-4cdd-99f1-9face478e8fc" Title="ViewModel Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm">
+      <HelpTOCNode Title="ViewModel Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm" />
+      <HelpTOCNode Id="ce2e4d09-564d-4ca2-93e7-a75290f1af5a" Title="ViewModel Fields" Url="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm">
+        <HelpTOCNode Title="_aboutWindow Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._aboutWindow.htm" />
+        <HelpTOCNode Title="_combinedPathsIsChecked Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._combinedPathsIsChecked.htm" />
+        <HelpTOCNode Title="_excludeExtensionsIsChecked Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._excludeExtensionsIsChecked.htm" />
+        <HelpTOCNode Title="_extensionsSelectorIndex Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._extensionsSelectorIndex.htm" />
+        <HelpTOCNode Title="_isBusy Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._isBusy.htm" />
+        <HelpTOCNode Title="_maxFileSize Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFileSize.htm" />
+        <HelpTOCNode Title="_maxFileSizeIsChecked Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFileSizeIsChecked.htm" />
+        <HelpTOCNode Title="_maxFolderContents Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFolderContents.htm" />
+        <HelpTOCNode Title="_maxFolderContentsIsChecked Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFolderContentsIsChecked.htm" />
+        <HelpTOCNode Title="_maxFolderSize Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFolderSize.htm" />
+        <HelpTOCNode Title="_maxFolderSizeIsChecked Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._maxFolderSizeIsChecked.htm" />
+        <HelpTOCNode Title="_message Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._message.htm" />
+        <HelpTOCNode Title="_messageIsVisible Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._messageIsVisible.htm" />
+        <HelpTOCNode Title="_messageZIndex Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._messageZIndex.htm" />
+        <HelpTOCNode Title="_minFileSize Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFileSize.htm" />
+        <HelpTOCNode Title="_minFileSizeIsChecked Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFileSizeIsChecked.htm" />
+        <HelpTOCNode Title="_minFolderContents Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFolderContents.htm" />
+        <HelpTOCNode Title="_minFolderContentsIsChecked Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFolderContentsIsChecked.htm" />
+        <HelpTOCNode Title="_minFolderSize Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFolderSize.htm" />
+        <HelpTOCNode Title="_minFolderSizeIsChecked Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._minFolderSizeIsChecked.htm" />
+        <HelpTOCNode Title="_scopeAllChildrenIsChecked Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._scopeAllChildrenIsChecked.htm" />
+        <HelpTOCNode Title="_scopeImmediateChildrenIsChecked Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._scopeImmediateChildrenIsChecked.htm" />
+        <HelpTOCNode Title="_scopeNoChildrenIsChecked Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._scopeNoChildrenIsChecked.htm" />
+        <HelpTOCNode Title="_splitPathsIsChecked Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._splitPathsIsChecked.htm" />
+        <HelpTOCNode Title="_userGuide Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel._userGuide.htm" />
+        <HelpTOCNode Title="HelpFile Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.HelpFile.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="cdddcb6a-2df5-4ae8-b287-748ddddeb83a" Title="ViewModel Methods" Url="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm">
+        <HelpTOCNode Title="CanAddExcludedPath Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanAddExcludedPath.htm" />
+        <HelpTOCNode Title="CanAddExtension Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanAddExtension.htm" />
+        <HelpTOCNode Title="CanAddSearchPath Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanAddSearchPath.htm" />
+        <HelpTOCNode Title="CanCancel Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanCancel.htm" />
+        <HelpTOCNode Title="CanGetFileSizeInfo Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanGetFileSizeInfo.htm" />
+        <HelpTOCNode Title="CanRemoveExcludedPath Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanRemoveExcludedPath.htm" />
+        <HelpTOCNode Title="CanRemoveExtension Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanRemoveExtension.htm" />
+        <HelpTOCNode Title="CanRemoveSearchPath Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CanRemoveSearchPath.htm" />
+        <HelpTOCNode Title="ExecuteAddExcludedPath Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteAddExcludedPath.htm" />
+        <HelpTOCNode Title="ExecuteAddExtension Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteAddExtension.htm" />
+        <HelpTOCNode Title="ExecuteAddSearchPath Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteAddSearchPath.htm" />
+        <HelpTOCNode Title="ExecuteCancel Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteCancel.htm" />
+        <HelpTOCNode Title="ExecuteGetFileSizeInfo Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteGetFileSizeInfo.htm" />
+        <HelpTOCNode Title="ExecuteOpenAboutWindow Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteOpenAboutWindow.htm" />
+        <HelpTOCNode Title="ExecuteOpenUserGuide Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteOpenUserGuide.htm" />
+        <HelpTOCNode Title="ExecuteRemoveExcludedPath Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteRemoveExcludedPath.htm" />
+        <HelpTOCNode Title="ExecuteRemoveExtension Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteRemoveExtension.htm" />
+        <HelpTOCNode Title="ExecuteRemoveSearchPath Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExecuteRemoveSearchPath.htm" />
+        <HelpTOCNode Title="GetSelectedScope Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.GetSelectedScope.htm" />
+        <HelpTOCNode Title="NotifyPropertyChanged Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.NotifyPropertyChanged.htm" />
+        <HelpTOCNode Title="PathDisplayOptionIsChecked Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.PathDisplayOptionIsChecked.htm" />
+        <HelpTOCNode Title="ScopeIsSelected Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ScopeIsSelected.htm" />
+        <HelpTOCNode Title="ShowMessage Method " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ShowMessage.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c6069c62-9f4f-4ef1-a3d5-dee07fad400c" Title="ViewModel Properties" Url="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm">
+        <HelpTOCNode Title="AboutWindow Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.AboutWindow.htm" />
+        <HelpTOCNode Title="AddExcludedPath Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.AddExcludedPath.htm" />
+        <HelpTOCNode Title="AddExtension Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.AddExtension.htm" />
+        <HelpTOCNode Title="AddSearchPath Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.AddSearchPath.htm" />
+        <HelpTOCNode Title="Cancel Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.Cancel.htm" />
+        <HelpTOCNode Title="CombinedPathsIsChecked Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.CombinedPathsIsChecked.htm" />
+        <HelpTOCNode Title="ExcludedPaths Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExcludedPaths.htm" />
+        <HelpTOCNode Title="ExcludeExtensionsIsChecked Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExcludeExtensionsIsChecked.htm" />
+        <HelpTOCNode Title="Extensions Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.Extensions.htm" />
+        <HelpTOCNode Title="ExtensionsSelectorIndex Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ExtensionsSelectorIndex.htm" />
+        <HelpTOCNode Title="FileSystemSizeInfoChecker Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.FileSystemSizeInfoChecker.htm" />
+        <HelpTOCNode Title="GetFileSizeInfo Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.GetFileSizeInfo.htm" />
+        <HelpTOCNode Title="IsBusy Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.IsBusy.htm" />
+        <HelpTOCNode Title="MaxFileSize Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFileSize.htm" />
+        <HelpTOCNode Title="MaxFileSizeIsChecked Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFileSizeIsChecked.htm" />
+        <HelpTOCNode Title="MaxFolderContents Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFolderContents.htm" />
+        <HelpTOCNode Title="MaxFolderContentsIsChecked Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFolderContentsIsChecked.htm" />
+        <HelpTOCNode Title="MaxFolderSize Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFolderSize.htm" />
+        <HelpTOCNode Title="MaxFolderSizeIsChecked Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MaxFolderSizeIsChecked.htm" />
+        <HelpTOCNode Title="Message Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.Message.htm" />
+        <HelpTOCNode Title="MessageIsVisible Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MessageIsVisible.htm" />
+        <HelpTOCNode Title="MessageZIndex Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MessageZIndex.htm" />
+        <HelpTOCNode Title="MinFileSize Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFileSize.htm" />
+        <HelpTOCNode Title="MinFileSizeIsChecked Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFileSizeIsChecked.htm" />
+        <HelpTOCNode Title="MinFolderContents Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFolderContents.htm" />
+        <HelpTOCNode Title="MinFolderContentsIsChecked Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFolderContentsIsChecked.htm" />
+        <HelpTOCNode Title="MinFolderSize Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFolderSize.htm" />
+        <HelpTOCNode Title="MinFolderSizeIsChecked Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.MinFolderSizeIsChecked.htm" />
+        <HelpTOCNode Title="OpenAboutWindow Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.OpenAboutWindow.htm" />
+        <HelpTOCNode Title="OpenUserGuide Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.OpenUserGuide.htm" />
+        <HelpTOCNode Title="RemoveExcludedPath Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.RemoveExcludedPath.htm" />
+        <HelpTOCNode Title="RemoveExtension Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.RemoveExtension.htm" />
+        <HelpTOCNode Title="RemoveSearchPath Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.RemoveSearchPath.htm" />
+        <HelpTOCNode Title="ScopeAllChildrenIsChecked Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ScopeAllChildrenIsChecked.htm" />
+        <HelpTOCNode Title="ScopeImmediateChildrenIsChecked Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ScopeImmediateChildrenIsChecked.htm" />
+        <HelpTOCNode Title="ScopeNoChildrenIsChecked Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.ScopeNoChildrenIsChecked.htm" />
+        <HelpTOCNode Title="SearchPaths Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.SearchPaths.htm" />
+        <HelpTOCNode Title="SplitPathsIsChecked Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.SplitPathsIsChecked.htm" />
+        <HelpTOCNode Title="UserGuide Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.UserGuide.htm" />
+        <HelpTOCNode Title="Version Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.Version.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5822a108-e643-43aa-a6fc-e4448a773e60" Title="ViewModel Events" Url="html/Events.T-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.htm">
+        <HelpTOCNode Title="PropertyChanged Event" Url="html/E-MichaelBrandonMorris.FileSystemSizeInfoTool.ViewModel.PropertyChanged.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="fa4df0be-4550-4e3a-b1b3-c1477ccd0a68" Title="MichaelBrandonMorris.FileSystemSizeInfoTool.Properties Namespace" Url="html/N-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.htm">
+    <HelpTOCNode Id="21d28564-6c13-4e01-96f2-94dc23979ab8" Title="Resources Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.htm">
+      <HelpTOCNode Title="Resources Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.htm" />
+      <HelpTOCNode Title="Resources Constructor " Url="html/M-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.-ctor.htm" />
+      <HelpTOCNode Id="fc91f6a3-4075-4de2-811f-b43c2a3a187e" Title="Resources Fields" Url="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.htm">
+        <HelpTOCNode Title="resourceCulture Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.resourceCulture.htm" />
+        <HelpTOCNode Title="resourceMan Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.resourceMan.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Resources Methods" Url="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.htm" />
+      <HelpTOCNode Id="0f661ad1-5c74-402d-b566-64c536dc5584" Title="Resources Properties" Url="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.htm">
+        <HelpTOCNode Title="Culture Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.Culture.htm" />
+        <HelpTOCNode Title="ResourceManager Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Resources.ResourceManager.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e61d7ddc-eb1c-465e-b56b-6490759113d2" Title="Settings Class" Url="html/T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm">
+      <HelpTOCNode Title="Settings Members" Url="html/AllMembers.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm" />
+      <HelpTOCNode Id="b857f0f3-abe1-4b4d-a16e-df071324e709" Title="Settings Fields" Url="html/Fields.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm">
+        <HelpTOCNode Title="defaultInstance Field" Url="html/F-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.defaultInstance.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Settings Methods" Url="html/Methods.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm" />
+      <HelpTOCNode Id="02f9f3db-3088-4e41-82be-ae5fabbc5d35" Title="Settings Properties" Url="html/Properties.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm">
+        <HelpTOCNode Title="Default Property " Url="html/P-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.Default.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Settings Events" Url="html/Events.T-MichaelBrandonMorris.FileSystemSizeInfoTool.Properties.Settings.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>
